@@ -1,0 +1,8 @@
+a.navbar-link {
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+  }
+  a.navbar-link:hover {
+    font-size: 200%;
+  }
