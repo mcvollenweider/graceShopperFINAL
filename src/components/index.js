@@ -1,10 +1,15 @@
-export { default as Navigation } from "./Navigation";
-// export { default as SearchBar } from "./SearchBar";
-// export { default as Login } from "./Login";
-// export { default as Register } from "./Register";
-// export { default as Header } from './Header'
+// export { default as AllNft } from './AllNft'
+// export { default as Profile } from './Profile'
+// export { default as Explore } from './Explore'
+// export { default as Login } from './Login'
+export { default as Products } from './Products'
+export { default as Home } from './Home'
+export { default as ContactUs } from './ContactUs'
+export { default as Newsletter } from './Newsletter'
+export { default as Discord } from './Discord'
+export { default as Footer }  from './Footer'
+export { default as NavigationBar } from './NavigationBar'
+export { default as Create } from './Create'
 
 
 
-//Evan
-export { default as Products } from "./Products";

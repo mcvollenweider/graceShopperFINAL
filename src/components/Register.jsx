@@ -1,11 +1,17 @@
-import React from "react";
+// // Christian is doing register
 
-const Register = () => {
+// import React from "react";
+
+// const Register = () => {
   
 
-  return (
-    <div></div>
-  )
-};
+//   return (
+//     <div>
+//       <header>
+//     <h1>Shoppers Delight</h1>
+//   </header>
+//   </div>
+//   )
+// };
 
-export default Register;
+// export default Register;
