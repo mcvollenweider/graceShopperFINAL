@@ -12,7 +12,11 @@ import {
   ContactUs,
   Footer,
   NavigationBar,
-  Create,
+  Settings,
+  Docs,
+  Careers,
+  Partners,
+  Blog,
   // AllNft,
   // Profile,
   // Login,
@@ -34,9 +38,25 @@ const App = () => {
   
       <Switch>
         <Route>
-          <Route path = "/Home">
+        <Route path = "/Home">
           <Home/>
           </Route>
+        <Route path = "/Settings">
+          <Settings/>
+          </Route>
+        <Route path = "/Blog">
+          <Blog/>
+          </Route>
+        <Route path = "/Docs">
+          <Docs/>
+          </Route>
+        <Route path = "/Partners">
+          <Partners/>
+          </Route>
+        <Route path = "/Careers">
+          <Careers/>
+          </Route>
+          
 <Route path = "/ContactUs">
  <ContactUs/>
 </Route>
@@ -47,6 +67,7 @@ const App = () => {
 <Newsletter/>
 </Route>
 <Route/>
+
 {/* Daniel ends here */}
         </Route>
         </Switch>
@@ -55,7 +76,7 @@ const App = () => {
         <Footer/>
          {/* Evan starts here */}
          {/* The products is appearing on a few pages */}
-      <Products allProducts={allProducts}/>
+      {/* <Products allProducts={allProducts}/> */}
 {/* Evan ends here */}
     </Router>
     

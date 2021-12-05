@@ -10,21 +10,22 @@ export default function App() {
       <MDBContainer lg='7' md = '5' className='blockquote-footer'>
         <MDBRow>
           <MDBCol lg='5' md='12' className='mb-4 mb-md-0'>
-            
+            <br/>
             <h5 className='text-uppercase'><img src = {logo}/> &nbsp; Shoppers Delight</h5>
-
+<br/>
             <p>
+          
             One of the world’s largest digital marketplace for
             crypto collectibles and non-fungible tokens (NFTs). Buy, sell, and discover exclusive digital items.
             </p>
           </MDBCol>
 
           <MDBCol lg='2' md='7' className='mb-4 mb-md-0'>
-            <h5 className='text-uppercase'>Marketplace</h5>
+            <h5 className='text-uppercase'><br/>Marketplace</h5>
 
             <ul className='list-unstyled mb-0'>
               <li>
-                <a href='' className='text-white-50'>
+                <a href='All_NFTs' className='text-white-50'>
                   All NFTs
                 </a>
               </li>
@@ -33,32 +34,32 @@ export default function App() {
           </MDBCol>
 
           <MDBCol lg='2' md='6' className='mb-4 mb-md-0'>
-            <h5 className='text-uppercase mb-2'>My Account</h5>
+            <h5 className='text-uppercase mb-2'><br/>My Account</h5>
 
             <ul className='list-unstyled'>
               <li>
-                <a href='' className='text-white-50'>
+                <a href='Profile' className='text-white-50'>
                   Profile
                 </a>
               </li>
               <li>
-                <a href='' className='text-white-50'>
+                <a href='Settings' className='text-white-50'>
                   Settings
                 </a>
               </li>
               <li>
                   <li className='text-uppercase mb-5'></li>
 
-              <h5 className='text-uppercase mb-2'>Stats</h5>
+              <h5 className='text-uppercase mb-2'><br/>Stats</h5>
               <ul className='list-unstyled mb-0'>
                   
               </ul>
-                <a href='' className='text-white-50'>
+                <a href='Rankings' className='text-white-50'>
                   Rankings
                 </a>
               </li>
               <li>
-                <a href='' className='text-white-50'>
+                <a href='Activity' className='text-white-50'>
                   Activity
                 </a>
               </li>
@@ -68,33 +69,33 @@ export default function App() {
           </MDBCol>
 
           <MDBCol lg='2' md='7' className='mb-4 mb-md-0'>
-            <h5 className='text-uppercase mb-2'>Resources</h5>
+            <h5 className='text-uppercase mb-2'><br/>Resources</h5>
 
             <ul className='list-unstyled mb-0'>
               <li>
-                <a href='' className='text-white-50'>
+                <a href='Newsletter' className='text-white-50'> 
                   Newsletter
                 </a>
               </li>
               <li>
-                <a href='' className='text-white-50'>
+                <a href='Partners' className='text-white-50'> 
                 Partners
                 </a>
               </li>
               <li>
-                <a href='' className='text-white-50'>
+                <a href='Blog' className='text-white-50'>
                  Blog
                 </a>
               </li>
               <li>
-                <a href='' className='text-white-50'>
+                <a href='Docs' className='text-white-50'>
                   Docs
                 </a>
               </li>
             </ul>
           </MDBCol>
           <MDBCol lg='1' md='6' className='mb-4 mb-md-0'>
-            <h5 className='text-uppercase mb-2'>Company</h5>
+            <h5 className='text-uppercase mb-2'> <br/>Company</h5>
 
             <ul className='list-unstyled mb-0'>
               <li>

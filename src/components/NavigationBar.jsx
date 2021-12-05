@@ -40,6 +40,11 @@ function NavigationBar() {
               </NavDropdown.Item>
 
             </NavDropdown>
+            
+            <NavDropdown title="Create" id="navbarScrollingDropdown">
+              <NavDropdown.Item href = "Login">Login</NavDropdown.Item>
+              <NavDropdown.Item href = "Register">Register</NavDropdown.Item>
+            </NavDropdown>
 
           </Nav>
 
@@ -53,6 +58,9 @@ function NavigationBar() {
 
             <Button variant="outline-success">Search</Button>
           </Form>
+
+         
+
         </Navbar.Collapse>
       </Navbar>
     </div>
