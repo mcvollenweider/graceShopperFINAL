@@ -1,11 +1,15 @@
-import React, { useEffect } from "react";
+// // Christian is doing profile
 
-const Profile = () => {
-  
+// import React from "react";
 
-  return (
-    <div></div>
-  )
-};
+// const Profile = () => {
+//   return (
+//     <div>
+//       <header>
+//         <h1>Shoppers Profile</h1>
+//       </header>
+//     </div>
+//   );
+// };
 
-export default Profile;
+// export default Profile;
