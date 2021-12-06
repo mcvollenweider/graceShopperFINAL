@@ -3,8 +3,11 @@ import React from 'react'
 function Docs() {
     return (
         <div>
-            
-        </div>
+        <h1>Who is doing this Docs page?</h1>
+<br/> <br/> <br/> <br/> <br/> <br/> <br/>  
+<br/> <br/> <br/> <br/> <br/> <br/> <br/> 
+<br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/> 
+    </div>
     )
 }
 

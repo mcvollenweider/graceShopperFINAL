@@ -5,11 +5,11 @@ import logo from './favicon-32x32.png';
 export default function App() {
   return (
 
-    <MDBFooter bgColor='dark' className='text-white-50 fixed-bottom'>
+    <MDBFooter bgColor='dark' className='text-white-50 '>
       
-      <MDBContainer lg='7' md = '5' className='blockquote-footer'>
+      <MDBContainer lg='7' md = '5' >
         <MDBRow>
-          <MDBCol lg='5' md='12' className='mb-4 mb-md-0'>
+          <MDBCol lg='5' md='12' className='mb-4 mb-md-0 '>
             <br/>
             <h5 className='text-uppercase'><img src = {logo}/> &nbsp; Shoppers Delight</h5>
 <br/>

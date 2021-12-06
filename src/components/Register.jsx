@@ -1,17 +1,19 @@
-// // Christian is doing register
+// Christian is doing register
 
-// import React from "react";
+import React from "react";
 
-// const Register = () => {
+const Register = () => {
   
 
-//   return (
-//     <div>
-//       <header>
-//     <h1>Shoppers Delight</h1>
-//   </header>
-//   </div>
-//   )
-// };
+  return (
+    <div>
+      <header>
+    <h1>Please Register Christian</h1>
+  </header>
+  <h1> <br/> <br/> <br/> <br/> <br/> <br/> <br/>  </h1>
+    <h1> <br/> <br/> <br/> <br/> <br/> <br/> <br/>  </h1>
+  </div>
+  )
+};
 
-// export default Register;
+export default Register;

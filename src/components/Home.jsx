@@ -6,10 +6,11 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 const Home = () => {
   return (
     <div>
-    
-    <h1> <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/> </h1>
-   
-    </div>
+            <h1>Daniel is working on this</h1>
+   <br/> <br/> <br/> <br/> <br/> <br/> <br/>  
+  <br/> <br/> <br/> <br/> <br/> <br/> <br/> 
+  <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/> 
+        </div>
   );
 };
 

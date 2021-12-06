@@ -6,7 +6,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 
 function ContactUs() {
   return (
-    
+
     <form>
   <div class="form-group">
     <h1 className='primary text-center text-lg-left'><br/>Contact Us</h1>
@@ -22,7 +22,11 @@ function ContactUs() {
   </div>
   <br/>
   <br/>
+  <div class="d-inline-block align-center">
   <button type="submit" class="btn btn-primary">Submit</button>
+  </div>
+  
+  <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/> 
 </form>
 
     

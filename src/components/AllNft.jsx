@@ -1,14 +1,21 @@
 // EVAN is doing the AllNft page
 
-// import React from "react";
+import React from "react";
 
 
-// const AllNft = () => {
-//   return (
-//     <header>
-//       <h1>Shoppers Delight</h1>
-//     </header>
-//   );
-// };
+const AllNft = () => {
+  return (
+      <div>
 
-// export default AllNft;
+      
+    <header>
+      <h1>Evan is doing this page because he is awesome!</h1>
+    </header>
+    <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/> 
+    <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/><br/> 
+    <br/> <br/> <br/> <br/> <br/> 
+    </div>
+  );
+};
+
+export default AllNft;
