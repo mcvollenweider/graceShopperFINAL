@@ -3,8 +3,11 @@ import React from 'react'
 function About() {
     return (
         <div>
-            
-        </div>
+        <h1>Who is doing this About page?</h1>
+<br/> <br/> <br/> <br/> <br/> <br/> <br/>  
+<br/> <br/> <br/> <br/> <br/> <br/> <br/> 
+<br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/> 
+    </div>
     )
 }
 

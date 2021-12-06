@@ -19,8 +19,8 @@ return (
             Send
             <MDBIcon far icon="paper-plane" className="ml-1" />
           </MDBBtn>
-          <br/>
-          <br/>
+         
+    <h1> <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/> </h1>
         </div>
       </form>
     </MDBCol>
