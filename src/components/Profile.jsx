@@ -5,7 +5,7 @@ import React from "react";
 const Profile = () => {
   return (
     <div>
-    <h1>Who is doing this Profile page?</h1>
+    <h1>Profile page</h1>
 <br/> <br/> <br/> <br/> <br/> <br/> <br/>  
 <br/> <br/> <br/> <br/> <br/> <br/> <br/> 
 <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/> 

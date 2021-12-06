@@ -31,6 +31,9 @@ const App = () => {
   let products = sampleProduct_DATA();
   const [allProducts, setProducts] = useState(products);
 
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
+  const [username, setUsername] = useState("");
+
   return (
     <Router>
       <div className="App">
@@ -74,10 +77,20 @@ const App = () => {
               <Newsletter />
             </Route>
             <Route path="/Login">
-              <Login/>
+            <Login
+              setIsLoggedIn={setIsLoggedIn}
+              isLoggedIn={isLoggedIn}
+              setUsername={setUsername}
+              username={username}
+            />
             </Route>
             <Route path="/Register">
-              <Register/>
+            <Register
+              setIsLoggedIn={setIsLoggedIn}
+              isLoggedIn={isLoggedIn}
+              setUsername={setUsername}
+              username={username}
+            />
             </Route>
             <Route path="/About">
               <About/>
