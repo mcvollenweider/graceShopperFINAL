@@ -6,3 +6,6 @@ a.navbar-link {
   a.navbar-link:hover {
     font-size: 200%;
   }
+  body {
+    font-family: Roboto, Helvetica, Arial, sans-serif;
+  }

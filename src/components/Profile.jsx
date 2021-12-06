@@ -1,11 +1,16 @@
-import React, { useEffect } from "react";
+// Christian is doing profile
+
+import React from "react";
 
 const Profile = () => {
-  
-
   return (
-    <div></div>
-  )
+    <div>
+    <h1>Who is doing this Profile page?</h1>
+<br/> <br/> <br/> <br/> <br/> <br/> <br/>  
+<br/> <br/> <br/> <br/> <br/> <br/> <br/> 
+<br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/> 
+</div>
+  );
 };
 
 export default Profile;
