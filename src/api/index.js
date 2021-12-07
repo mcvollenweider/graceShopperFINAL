@@ -1,5 +1,5 @@
 import axios from "axios";
-import { getToken, storeToken, storeUser } from "../../auth";
+import { getToken, storeToken, storeUser } from "../auth";
 const BASE = "http://localhost:5000/api";
 // this is an example for an api call with axios
 export async function getUsers() {

@@ -2,7 +2,7 @@
 
 import React, { useState, useEffect } from "react";
 import { Form, Button, Col, ButtonToolbar } from "react-bootstrap";
-import { getToken, storeToken } from "../../auth";
+import { getToken, storeToken } from "../auth";
 
 import { registerUser } from "../api";
 import { useHistory } from "react-router-dom";

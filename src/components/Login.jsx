@@ -2,7 +2,7 @@
 import React, { useState, useEffect } from "react";
 import { Form, Button, Col, ButtonToolbar, FormGroup } from "react-bootstrap";
 import { loginUser } from "../api";
-import { get} from "../../auth"
+import { get} from "../auth"
 import { useHistory } from "react-router-dom";
 
 const Login = ({ isLoggedIn, setIsLoggedIn, setUsername, username }) => {
