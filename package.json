@@ -11,8 +11,9 @@
     "db:build": "node ./db/init_db",
     "start": "node index.js"
   },
-   "engines" : { "node" : "6.14.14" } ,
-
+  "engines": {
+    "node": "6.11.1"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
