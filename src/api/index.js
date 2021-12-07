@@ -23,18 +23,18 @@ export async function loginUser(username, password) {
     throw error;
   }
 }
-// export async function registerUser(username, password) {
-//   try {
-//     const { data } = await axios.post(`${BASE}/users/register`, {
-//       username: username,
-//       password: password,
-//     });
-//     console.log(data);
-//     storeToken(data.token);
-//     storeUser(data.user.username);
-//     console.log(data.token);
-//     return data;
-//   } catch (error) {
-//     throw error;
-//   }
-// }
+export async function registerUser(username, password) {
+  try {
+    const { data } = await axios.post(`${BASE}/users/register`, {
+      username: username,
+      password: password,
+    });
+    console.log(data);
+    storeToken(data.token);
+    storeUser(data.user.username);
+    console.log(data.token);
+    return data;
+  } catch (error) {
+    throw error;
+  }
+}
