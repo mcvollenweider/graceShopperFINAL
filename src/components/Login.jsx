@@ -1,6 +1,6 @@
 // Christian is doing login
 import React, { useState, useEffect } from "react";
-import { Form, Button, Col, ButtonToolbar, FormGroup } from "react-bootstrap";
+import { Form, Button, Col,Container, ButtonToolbar, FormGroup } from "react-bootstrap";
 import { loginUser } from "../api";
 import { get} from "../auth"
 import { useHistory } from "react-router-dom";
@@ -12,8 +12,9 @@ const Login = ({ isLoggedIn, setIsLoggedIn, setUsername, username }) => {
 
   let loginForm = (
     <Container>
-    <Col md={{ span: 4, offset: 1 }}>
-      Login Form
+      <br/> <br/> <br/> <br/> <br/>
+    <Col md={{ span: 4, offset: 4 }}>
+      <b> Login Form </b>
       <Form
         onSubmit={async (e) => {
           e.preventDefault();
@@ -30,8 +31,8 @@ const Login = ({ isLoggedIn, setIsLoggedIn, setUsername, username }) => {
           }
         }}
       >
-        <Form.Group className="mb-3" controlId="formBasicUsername">
-          <Form.Label>Username</Form.Label>
+        <Form.Group className="mb-4" controlId="formBasicUsername">
+          <Form.Label>  Username </Form.Label>
           <Form.Control
             type="text"
             placeholder="usernames"
@@ -41,8 +42,8 @@ const Login = ({ isLoggedIn, setIsLoggedIn, setUsername, username }) => {
             }}
           />
         </Form.Group>
-        <Form.Group className="mb-3" controlId="formBasicPassword">
-          <Form.Label> enter password</Form.Label>
+        <Form.Group className="mb-4" controlId="formBasicPassword">
+          <Form.Label> Enter Password </Form.Label>
           <Form.Control
             type="password"
             placeholder="Password"
@@ -52,7 +53,7 @@ const Login = ({ isLoggedIn, setIsLoggedIn, setUsername, username }) => {
             }}
           />
         </Form.Group>
-        <ButtonToolbar className="mb-2">
+        <ButtonToolbar className="mb-3">
           <Button variant="primary" type="submit">
             Login
           </Button>
@@ -68,6 +69,7 @@ const Login = ({ isLoggedIn, setIsLoggedIn, setUsername, username }) => {
         </ButtonToolbar>
       </Form>
     </Col>
+    <br/> <br/> <br/> <br/> <br/>
     </Container>
   );
 
@@ -83,8 +85,11 @@ const Login = ({ isLoggedIn, setIsLoggedIn, setUsername, username }) => {
         }}
       >
         Logout
+        
       </Button>
+     
     </ButtonToolbar>
+    
     
   );
   return isLoggedIn ? logoutButton : loginForm;

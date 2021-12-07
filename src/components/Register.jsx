@@ -1,7 +1,7 @@
 // Christian is doing register
 
 import React, { useState, useEffect } from "react";
-import { Form, Button, Col, ButtonToolbar } from "react-bootstrap";
+import { Form, Button, Col,Container, ButtonToolbar } from "react-bootstrap";
 import { getToken, storeToken } from "../auth";
 
 import { registerUser } from "../api";
@@ -12,8 +12,9 @@ const Register = ({ isLoggedIn, setIsLoggedIn }) => {
   let history = useHistory();
   return (
     <Container>
-    <Col md={{ span: 4, offset: 1 }}>
-      Register form
+      <br/> <br/> <br/>
+    <Col md={{ span: 4, offset: 4 }}>
+       <b> Please Register </b>
       <Form
         onSubmit={async (e) => {
           e.preventDefault();
@@ -59,9 +60,11 @@ const Register = ({ isLoggedIn, setIsLoggedIn }) => {
             Register
           </Button>
         </ButtonToolbar>
+        <br/> <br/> <br/> <br/> <br/> <br/> <br/> 
       </Form>
     </Col>
     </Container>
+    
   );
 };
 
