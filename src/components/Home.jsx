@@ -2,11 +2,13 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import logo from "./220px-NFT_Icon.png";
+
 // import logo from './favicon-32x32.png';
 
 const Home = () => {
   return (
     <div>
+    
       <h1 class="text-center" data-toggle="collapse">
         <b>
           <br></br>
