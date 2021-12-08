@@ -111,7 +111,7 @@ export default function App() {
       <div className='text-center p-1 mb-4 mb-md-0' style={{ backgroundColor: 'rgba(0, 0, 0, 0.2)' }}>
     
         &copy; {new Date().getFullYear()} Copyright:{' '}
-        <a className='text-white' href=''>
+        <a className='text-white' href='https://shoppersdelight.herokuapp.com/'>
           ShoppersDelight.com
         </a>
         
