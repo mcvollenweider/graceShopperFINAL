@@ -3,7 +3,7 @@ import ReactDOM from "react-dom";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import sampleProduct_DATA from "./api/structures";
-// import { getToken, getUser } from "./auth";
+
 
 import {
   Home,

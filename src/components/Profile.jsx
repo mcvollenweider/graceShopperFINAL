@@ -1,6 +1,13 @@
 // Christian is doing profile
 
 import React from "react";
+import {
+  Form,
+  Dropdown,
+  DropdownButton,
+  Col,
+  Container,
+} from "react-bootstrap";
 
 const Profile = () => {
   return (
