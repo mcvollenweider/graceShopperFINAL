@@ -15,21 +15,28 @@ function NavigationBar() {
   return (
     <div>
       <Navbar bg="dark" variant={"dark"} expand="lg">
-
-        <Navbar.Brand href="Home" className="btn-group "> Shoppers Delight   </Navbar.Brand>
-
-        <Navbar.Brand href="Home" className="btn-group ">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Shoppers Delight   </Navbar.Brand>
+        <Navbar.Brand href="Home" className="btn-group ">
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Shoppers Delight{" "}
+        </Navbar.Brand>
 
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
-          
           <Form className="d-flex">
-          <form className="form-inline my-2 my-lg-2 px-4">
-      <input className="form-control mx-sm-5 px-5" type="search" placeholder="Search" aria-label="Search"/>
-      
-    </form>
-    <button className="btn btn-outline-success mx-5 my-sm-1 px-2" type="submit">Search</button>
-            
+            <form className="form-inline my-2 my-lg-2 px-4">
+              <input
+                className="form-control mx-sm-5 px-5"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+            </form>
+            <button
+              className="btn btn-outline-success mx-5 my-sm-1 px-2"
+              type="submit"
+            >
+              Search
+            </button>
+
             <Nav
               className="me-auto my-2 my-lg-1"
               style={{ maxHeight: "400px" }}
@@ -56,10 +63,9 @@ function NavigationBar() {
               </NavDropdown>
 
               <NavDropdown title="Create" id="navbarScrollingDropdown">
-              <NavDropdown.Item href="Profile">Profile</NavDropdown.Item>
+                <NavDropdown.Item href="Profile">Profile</NavDropdown.Item>
                 <NavDropdown.Item href="Login">Login</NavDropdown.Item>
                 <NavDropdown.Item href="Register">Register</NavDropdown.Item>
-                
               </NavDropdown>
             </Nav>
           </Form>
