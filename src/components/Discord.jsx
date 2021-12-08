@@ -13,6 +13,6 @@ function Discord() {
 <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/> 
     </div>      
     )
-}
+}      
 
 export default Discord;
