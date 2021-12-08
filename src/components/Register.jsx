@@ -41,7 +41,7 @@ const Register = ({ isLoggedIn, setIsLoggedIn }) => {
             }}
           />
           <Form.Text className="text-muted">
-            We'll never share your username or password with anyone else.
+            We will never share your username or password with anyone else.
           </Form.Text>
         </Form.Group>
         <Form.Group className="mb-3" controlId="formBasicPassword">

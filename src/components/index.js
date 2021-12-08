@@ -8,7 +8,6 @@ export { default as Footer }  from './Footer'
 export { default as NavigationBar } from './NavigationBar'
 export { default as Settings } from './Settings'
 export { default as Docs } from './Docs'
-export { default as Partners } from './Partners'
 export { default as Careers } from './Careers'
 export { default as Blog } from './Blog'
 export { default as Rankings } from "./Rankings"

@@ -16,7 +16,6 @@ import {
   Settings,
   Docs,
   Careers,
-  Partners,
   Blog,
   Rankings,
   Activity,
@@ -53,9 +52,6 @@ const App = () => {
             </Route>
             <Route path="/Docs">
               <Docs />
-            </Route>
-            <Route path="/Partners">
-              <Partners />
             </Route>
             <Route path="/Careers">
               <Careers />
