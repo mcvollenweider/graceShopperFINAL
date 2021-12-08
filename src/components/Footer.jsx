@@ -78,11 +78,6 @@ export default function App() {
                 </a>
               </li>
               <li>
-                <a href='Partners' className='text-white-50'> 
-                Partners
-                </a>
-              </li>
-              <li>
                 <a href='Blog' className='text-white-50'>
                  Blog
                 </a>
