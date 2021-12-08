@@ -10,27 +10,29 @@ const Home = () => {
       <h1 class="text-center" data-toggle="collapse">
         <b>
           <br></br>
-          <br></br>
-          <br></br>
-          <br></br>
-          <br></br>
-          <br></br>
+        
           &nbsp;&nbsp;&nbsp;Discover, collect, and sell extraordinary NFTs
         </b>
       </h1>
       <h2 class="text-center" data-toggle="collapse">&nbsp;&nbsp;&nbsp;on one of the world's largest NFT marketplace</h2>
-     
-      <div>
+      <br></br>
+      <br></br>
       
-      <a  data-toggle="collapse">
-        <img  class="center-block img-responsive" src={logo}
-       />
-      </a>
-      </div>
-     
-      <br /> <br /> <br /> <br /> <br /> <br /> <br />
-      <br /> <br /> <br /> <br /> <br /> <br /> <br />
-      <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br />
+      <div class="col-md-12 text-center" data-toggle="collapse" >
+ <div class="col-12" >
+ <img class="img-responsive" src={logo} />
+ <br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+ </div>
+</div>
+    
     </div>
   );
 };

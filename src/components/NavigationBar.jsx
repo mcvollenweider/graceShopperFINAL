@@ -16,8 +16,6 @@ function NavigationBar() {
     <div>
       <Navbar bg="dark" variant={"dark"} expand="lg">
 
-        <Navbar.Brand href="Home" className="btn-group "> Shoppers Delight   </Navbar.Brand>
-
         <Navbar.Brand href="Home" className="btn-group ">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Shoppers Delight   </Navbar.Brand>
 
         <Navbar.Toggle aria-controls="navbarScroll" />

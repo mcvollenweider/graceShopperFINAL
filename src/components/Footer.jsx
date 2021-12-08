@@ -115,6 +115,7 @@ export default function App() {
           ShoppersDelight.com
         </a>
         
+        
       </div>
     </MDBFooter>
   );
