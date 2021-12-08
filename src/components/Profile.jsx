@@ -8,6 +8,7 @@ import {
   Col,
   Container,
 } from "react-bootstrap";
+
 const Profile = () => {
   return (
     <div>
