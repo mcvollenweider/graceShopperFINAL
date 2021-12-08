@@ -37,17 +37,17 @@ const {
     console.log("Starting to create users...");
     try {
       const usersToCreate = [
-        { username: "christian", password: "1111" },
-        { username: "evan", password: "2222" },
-        { username: "daniel", password: "3333" },
-        { username: "albert", password: "bertie99" },
-        { username: "sandra", password: "sandra123" },
-        { username: "glamgal", password: "glamgal123" },
-        { username: "bob", password: "4444" },
-        { username: "dylan", password: "5555" },
-        { username: "michael", password: "6666" },
-        { username: "chico", password: "7777" },
-        { username: "chicka", password: "8888" },
+        { username: "Christian", password: "1111" },
+        { username: "Evan", password: "2222" },
+        { username: "Daniel", password: "3333" },
+        { username: "Albert", password: "bertie99" },
+        { username: "Dandra", password: "sandra123" },
+        { username: "Glamgal", password: "glamgal123" },
+        { username: "Bob", password: "4444" },
+        { username: "Dylan", password: "5555" },
+        { username: "Michael", password: "6666" },
+        { username: "Chico", password: "7777" },
+        { username: "Chicka", password: "8888" },
       ];
       const users = await Promise.all(usersToCreate.map(createUser));
       console.log("Users created:");
