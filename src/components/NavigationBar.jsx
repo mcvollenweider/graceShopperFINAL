@@ -64,10 +64,12 @@ function NavigationBar() {
               </NavDropdown>
 
               <NavDropdown title="Create" id="navbarScrollingDropdown">
+              <NavDropdown.Item href="Cart">Cart</NavDropdown.Item>
                 <NavDropdown.Item href="Profile">Profile</NavDropdown.Item>
                 <NavDropdown.Item href="Login">Login</NavDropdown.Item>
                 <NavDropdown.Item href="Register">Register</NavDropdown.Item>
               </NavDropdown>
+              
             </Nav>
           </Form>
         </Navbar.Collapse>
