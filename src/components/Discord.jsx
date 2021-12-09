@@ -7,19 +7,24 @@ function Discord() {
   return (
     <div
       className="text-center p-1 mb-1 mb-md-0"
-      style={{ backgroundColor: "rgb(60, 60, 60)" }}
+      style={{ backgroundColor: "black" }}
     >
       <Container>
         <Row>
-          <Col class="img-fluid img-thumbnail/200x188" xs={6} md={10}>
-            <Image src={logo} thumbnail />
-
-            <div>
+            
+          <Col  xs={12} md={12}>
+          <div className="m-5 mb-5 mt-5">
               <Button href="https://discord.gg/VNu5XbRw">
                 Join Our Discord!
               </Button>
             </div>
+         
           </Col>
+
+          <Col className="img-fluid img-thumbnail/200x188">
+          <Image className="mb-5 mt-5" src={logo} thumbnail />
+          </Col>
+
         </Row>
       </Container>
     </div>

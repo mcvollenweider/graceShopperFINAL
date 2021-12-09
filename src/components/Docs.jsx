@@ -42,8 +42,6 @@ function Docs() {
         </Col>
       </Container>
       <br /> <br /> <br /> <br /> <br /> <br /> <br />
-      <br /> <br /> <br /> <br /> <br /> <br /> <br />
-      <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br />
     </div>
   );
 }
