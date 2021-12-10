@@ -24,6 +24,7 @@ const sampleProduct_DATA = () => {
       //proper names should be capitalized
       {
         id: 1,
+        author: 'kyle',
         name: "St. Michael",
         price: "10.00",
         current_owner: "Auriel",
@@ -52,6 +53,7 @@ const sampleProduct_DATA = () => {
       },
       {
         id: 2,
+        author: 'friendlyArtist42',
         name: "St. Jude",
         price: "99.00",
         current_owner: "Milk",
@@ -80,6 +82,7 @@ const sampleProduct_DATA = () => {
       },
       {
         id: 3,
+        author: 'daveC',
         name: "St. Paul",
         price: "100.00",
         current_owner: "Auriel",
@@ -108,6 +111,7 @@ const sampleProduct_DATA = () => {
       },
       {
         id: 4,
+        author: 'bestArtist',
         name: "St. John",
         price: "84.23",
         current_owner: "Milk",
