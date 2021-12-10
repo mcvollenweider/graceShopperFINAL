@@ -3,17 +3,16 @@
 const { createUser, createProduct } = require("./");
 const client = require("./client");
 
-
-
   async function dropTables() {
     // drop all tables, in the correct order
     try {
       console.log("Starting to drop tables...");
       await client.query(`
           DROP TABLE IF EXISTS pendingOrders;
-          DROP TABLE IF EXISTS users;
+          DROP TABLE IF EXISTS users cascade;
           DROP TABLE IF EXISTS products;
-          
+          DROP TABLE IF EXISTS orders;
+          DROP TABLE IF EXISTS orderItem;          
         `);
       console.log("Finished dropping tables!");
     } catch (error) {
