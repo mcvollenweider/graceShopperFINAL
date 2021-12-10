@@ -34,7 +34,7 @@ const Login = ({ isLoggedIn, setIsLoggedIn, setUsername, username }) => {
               console.log(error.message);
             } finally {
               setIsLoggedIn(true);
-              // history.push("/Home");
+              history.push("/Profile");
             }
           }}
         >
