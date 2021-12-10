@@ -9,7 +9,7 @@ const AllNft = () => {
 
       
     <header>
-      <h1>Evan is doing this page because he is awesome!</h1>
+      <h1>Evan is doing this page</h1>
     </header>
     <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/> 
     <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/><br/> 
