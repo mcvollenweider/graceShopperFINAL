@@ -1,32 +1,60 @@
-import React from "react";
-import { MDBContainer, MDBRow, MDBCol, MDBBtn, MDBIcon, MDBInput } from 'mdb-react-ui-kit';
+//This code is operational
+import "bootstrap/dist/css/bootstrap.min.css";
+import React from 'react'
 
-const FormPage = () => {
-return (
-<MDBContainer>
-  <MDBRow>
-    <MDBCol md="6">
-      <form>
-        <p className="h5 text-center mb-4 fixed-center"><br/>Subscribe To Our Newsletter</p>
-        <div className="grey-text">
-          <MDBInput label="Your name" icon="user" group type="text" validate error="wrong"
-            success="right" />
-          <MDBInput label="Your email" icon="envelope" group type="email" validate error="wrong"
-            success="right" />
+function Newsletter() {
+  return (
+    <div>
+    <div
+      className="bg-image"
+      style={{
+        backgroundImage:
+          "url('https://i2.wp.com/files.123freevectors.com/wp-content/original/115982-abstract-cool-blue-blurred-lights-background-design.jpg?w=800&q=95)",
+        backgroundSize: "100%",
+        backgroundRepeat: "repeat",
+      }}
+    >
+      <div class="mask" style={{ backgroundColor: "rgba(0, 0, 0, 0.6)" }}>
+      <div>
+        <h1 className="text-center text-white p-5 mb-1 mb-md-0">Subscribe To Our Newsletter!</h1>
+        <div className="container">
+          <form >
+            <div className="row pt-2 mx-auto">
+              <div className="col-8 form-group mx-auto">
+                <input
+                  type="text"
+                  className="form-control"
+                  placeholder="Name"
+                  name="name"
+                />
+                <br></br>
+              </div>
+              
+              <div className="col-8 form-group pt-2 mx-auto">
+                <input
+                  type="email"
+                  className="form-control"
+                  placeholder="Email Address"
+                  name="email"
+                />
+              </div>
+              
+              <div className="text-center p-4 mb-1 mb-md-0">
+                <button type="button" class="btn btn-primary">
+                  Send
+                </button>
+              </div>
+            </div>
+            <br></br><br></br><br></br><br></br><br></br>
+            <br></br><br></br><br></br><br></br>
+          </form>
+          </div>
         </div>
-        <div className="text-center">
-          <MDBBtn outline color="info">
-            Send
-            <MDBIcon far icon="paper-plane" className="ml-1" />
-          </MDBBtn>
-         
-    <h1> <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/> </h1>
-        </div>
-      </form>
-    </MDBCol>
-  </MDBRow>
-</MDBContainer>
-);
-};
+      </div>
+    </div>
+    </div>
+  )
+}
 
-export default FormPage;
+export default Newsletter;
+
