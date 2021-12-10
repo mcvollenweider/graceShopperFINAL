@@ -24,24 +24,13 @@ const sampleProduct_DATA = () => {
       //proper names should be capitalized
       {
         id: 1,
-        author: 'kyle',
+        author: "kyle",
         name: "St. Michael",
         price: "10.00",
         current_owner: "Auriel",
         image_url:
           "https://avatars2.githubusercontent.com/u/29058777?s=460&v=4",
         for_sale: true,
-        bid_information: {
-          highest_bid: "0.00",
-          highest_bidder: "",
-          bids: [
-            {
-              bidder: "Auriel",
-              bid: "10.00",
-            },
-          ],
-        },
-        buyout_price: "1260.00", //set by owner/seller
         description: "A example of st. michael",
         user_chain: [
           {
@@ -53,23 +42,13 @@ const sampleProduct_DATA = () => {
       },
       {
         id: 2,
-        author: 'friendlyArtist42',
+        author: "friendlyArtist42",
         name: "St. Jude",
         price: "99.00",
         current_owner: "Milk",
         image_url:
           "https://avatars2.githubusercontent.com/u/29058777?s=460&v=4",
         for_sale: true,
-        bid_information: {
-          highest_bid: "0.00",
-          highest_bidder: "",
-          bids: [
-            {
-              bidder: "Milk",
-              bid: "99.00",
-            },
-          ],
-        },
         buyout_price: "99.00", //set by owner/seller
         description: "A example of St. Jude",
         user_chain: [
@@ -82,23 +61,13 @@ const sampleProduct_DATA = () => {
       },
       {
         id: 3,
-        author: 'daveC',
+        author: "daveC",
         name: "St. Paul",
         price: "100.00",
         current_owner: "Auriel",
         image_url:
           "https://avatars2.githubusercontent.com/u/29058777?s=460&v=4",
         for_sale: true,
-        bid_information: {
-          highest_bid: "0.00",
-          highest_bidder: "",
-          bids: [
-            {
-              bidder: "Auriel",
-              bid: "100.00",
-            },
-          ],
-        },
         buyout_price: "100.00", //set by owner/seller
         description: "A example of St. Paul",
         user_chain: [
@@ -111,23 +80,13 @@ const sampleProduct_DATA = () => {
       },
       {
         id: 4,
-        author: 'bestArtist',
+        author: "bestArtist",
         name: "St. John",
         price: "84.23",
         current_owner: "Milk",
         image_url:
           "https://avatars2.githubusercontent.com/u/29058777?s=460&v=4",
         for_sale: true,
-        bid_information: {
-          highest_bid: "0.00",
-          highest_bidder: "",
-          bids: [
-            {
-              bidder: "Sasha",
-              bid: "84.23",
-            },
-          ],
-        },
         buyout_price: "84.23", //set by owner/seller
         description: "A example of St. John",
         user_chain: [
