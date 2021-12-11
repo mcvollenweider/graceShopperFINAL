@@ -34,12 +34,12 @@ function ContactUs() {
             style={{
               backgroundImage:
                 "url('https://i2.wp.com/files.123freevectors.com/wp-content/original/115982-abstract-cool-blue-blurred-lights-background-design.jpg?w=800&q=95)",
-              height: "100vh",
+              height: "75vh",
               backgroundSize: "100%",
             }}
           >
       
-       <div className="mask" style={{ backgroundColor: "rgba(0, 0, 0, 0.6)", height: "100vh",
+       <div className="mask" style={{ backgroundColor: "rgba(0, 0, 0, 0.6)", height: "75vh",
               backgroundSize: "100%", }}>
       <div>
       <h1 className="text-center text-white p-4 mt-0 mb-1 mb-md-0">Contact Us</h1>

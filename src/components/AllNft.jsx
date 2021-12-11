@@ -12,6 +12,15 @@ let allProducts = props.allProducts;
 //allProducts = allProducts[0];
 console.log(allProducts.length)
   return (
+    <div
+    className="bg-image "
+    style={{
+      backgroundImage:
+        "url('https://i2.wp.com/files.123freevectors.com/wp-content/original/115982-abstract-cool-blue-blurred-lights-background-design.jpg?w=800&q=95)",
+      height: "100vh",
+      backgroundSize: "100%",
+    }}
+  >
     <Container>
       <Row className="m-5">
         {allProducts.length
@@ -34,6 +43,8 @@ console.log(allProducts.length)
           : "No products found"}
       </Row>
     </Container>
+    </div>
+    
   );
 }
 
