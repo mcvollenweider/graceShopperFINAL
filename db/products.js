@@ -41,10 +41,12 @@ async function createProduct({author, name, price, current_owner, image_url, for
 
   async function getAllProducts() {
     try {
+      console.log('getAllProducts');
       const {
-        rows: [products],
+        rows,
       } = await client.query(`SELECT * FROM products ;`);
-      return products;
+      console.log('heoaodkjsaodkasdnmkasdnmkasnmdkasmnd', rows)
+      return rows
     } catch (err) {
       throw err;
     }
