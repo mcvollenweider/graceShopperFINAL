@@ -51,11 +51,6 @@ function NavigationBar() {
               <NavDropdown.Item href="All_NFTs">All NFTs</NavDropdown.Item>
             </NavDropdown>
 
-            <NavDropdown title="Stats" id="navbarScrollingDropdown">
-              <NavDropdown.Item href="Rankings">Rankings</NavDropdown.Item>
-              <NavDropdown.Item href="Activity">Activity</NavDropdown.Item>
-            </NavDropdown>
-
             <NavDropdown title="Resources" id="navbarScrollingDropdown">
               <NavDropdown.Item href="ContactUs">Contact Us</NavDropdown.Item>
               <NavDropdown.Item href="Newsletter">Newsletter</NavDropdown.Item>

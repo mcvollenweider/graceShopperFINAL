@@ -16,9 +16,6 @@ import {
   Settings,
   Docs,
   Careers,
-  Blog,
-  Rankings,
-  Activity,
   AllNft,
   Profile,
   Login,
@@ -51,9 +48,7 @@ const App = () => {
               <Route path="/Settings">
                 <Settings />
               </Route>
-              <Route path="/Blog">
-                <Blog />
-              </Route>
+              
               <Route path="/Docs">
                 <Docs />
               </Route>
@@ -67,12 +62,7 @@ const App = () => {
               <Route path="/Discord">
                 <Discord />
               </Route>
-              <Route path="/Rankings">
-                <Rankings />
-              </Route>
-              <Route path="/Activity">
-                <Activity />
-              </Route>
+             
               <Route path="/Newsletter">
                 <Newsletter />
               </Route>

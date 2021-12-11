@@ -52,21 +52,8 @@ export default function App() {
                   Settings
                 </a>
               </li>
-              <li>
-                <h5 className="text-uppercase mb-2">
-                  <br />
-                  Stats
-                </h5>
-                <ul className="list-unstyled mb-0"></ul>
-                <a href="Rankings" className="text-white-50">
-                  Rankings
-                </a>
-              </li>
-              <li>
-                <a href="Activity" className="text-white-50">
-                  Activity
-                </a>
-              </li>
+    
+            
             </ul>
           </MDBCol>
 
@@ -82,11 +69,7 @@ export default function App() {
                   Newsletter
                 </a>
               </li>
-              <li>
-                <a href="Blog" className="text-white-50">
-                  Blog
-                </a>
-              </li>
+      
               <li>
                 <a href="Docs" className="text-white-50">
                   Docs
