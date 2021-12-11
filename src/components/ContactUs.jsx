@@ -3,7 +3,7 @@ import React, { useRef } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import * as emailjs from "emailjs-com";
 
-export default function ContactUs() {
+function ContactUs() {
   const form = useRef();
 
   const sendEmail = (e) => {
@@ -30,16 +30,17 @@ export default function ContactUs() {
   return (
     
     <div
-      className="bg-image"
-      style={{
-        backgroundImage:
-          "url('https://i2.wp.com/files.123freevectors.com/wp-content/original/115982-abstract-cool-blue-blurred-lights-background-design.jpg?w=800&q=95)",
-        backgroundSize: "100%",
-        backgroundRepeat: "repeat",
-      }}
-    >
+            className="bg-image"
+            style={{
+              backgroundImage:
+                "url('https://i2.wp.com/files.123freevectors.com/wp-content/original/115982-abstract-cool-blue-blurred-lights-background-design.jpg?w=800&q=95)",
+              height: "100vh",
+              backgroundSize: "100%",
+            }}
+          >
       
-      <div class="mask" style={{ backgroundColor: "rgba(0, 0, 0, 0.6)" }}>
+       <div className="mask" style={{ backgroundColor: "rgba(0, 0, 0, 0.6)", height: "100vh",
+              backgroundSize: "100%", }}>
       <div>
       <h1 className="text-center text-white p-4 mt-0 mb-1 mb-md-0">Contact Us</h1>
         <div className="container">
@@ -70,7 +71,7 @@ export default function ContactUs() {
                 />
               </div>
               <div className="col-8 form-group pt-3 mx-auto">
-                <textarea
+                <textarea           
                   className="form-control"
                   id=""
                   cols="30"
@@ -80,7 +81,7 @@ export default function ContactUs() {
                 ></textarea>
               </div>
               <div className="text-center p-4 mb-1 mb-md-0">
-                <button type="button" class="btn btn-primary">
+                <button type="submit" value="Send" className="btn btn-primary">
                   Send
                 </button>
               </div>
@@ -92,3 +93,5 @@ export default function ContactUs() {
     </div>
   );
 }
+
+export default ContactUs;

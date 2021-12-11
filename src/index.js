@@ -5,7 +5,6 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import sampleProduct_DATA from "./api/structures";
 
 
-
 import {
   Home,
   Discord,
