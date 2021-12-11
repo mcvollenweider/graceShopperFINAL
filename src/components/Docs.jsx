@@ -26,11 +26,15 @@ function Docs() {
           backgroundSize: "100%",
         }}
       >
+      <br /> <br />
       <Container>
         <br></br><br></br><br></br>
       <Col md={{ span: 4, offset: 4 }}>
-        <h1 className="text-center text-white">FAQS</h1>
-        <br /><br></br><br></br><br></br>
+        <h2 className="text-white">Frequently Asked Questions</h2>
+        <br /> 
+        </Col>
+        </Container>
+        <Container> 
         <DropdownButton id="dropdown-item-button" title="What is an NFT?">
           <Dropdown.ItemText>
             <b> What is an NFT? </b>
@@ -56,7 +60,7 @@ function Docs() {
             partnership request
           </Dropdown.ItemText>
         </DropdownButton>
-        </Col>
+        
       </Container>
       </div>
       </div>
