@@ -1,6 +1,6 @@
 import React from "react";
 import { MDBFooter, MDBContainer, MDBRow, MDBCol } from "mdb-react-ui-kit";
-import favicon from './images/favicon-32x32.png';
+import favicon from "./images/favicon-32x32.png";
 
 export default function App() {
   return (
@@ -52,8 +52,6 @@ export default function App() {
                   Settings
                 </a>
               </li>
-    
-            
             </ul>
           </MDBCol>
 
@@ -62,14 +60,14 @@ export default function App() {
               <br />
               Resources
             </h5>
-     
+
             <ul className="list-unstyled mb-0">
               <li>
                 <a href="Newsletter" className="text-white-50">
                   Newsletter
                 </a>
               </li>
-      
+
               <li>
                 <a href="Docs" className="text-white-50">
                   Docs
