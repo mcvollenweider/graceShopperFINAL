@@ -31,83 +31,89 @@ const App = () => {
   let products = sampleProduct_DATA();
   const [isLoggedIn, setIsLoggedIn] = useState(false);
   const [username, setUsername] = useState("");
+  const [cart, setCart] = useState([]);
   let { fakeData } = sampleProduct_DATA(); 
   let allProducts = fakeData;
+  
 console.log(allProducts);
   return (
     <Router>
       <div className="App">
-        {/* Daniel starts here */}
-        <NavigationBar />
+        <div className="d-flex flex-column min-vh-100">
+          {/* Daniel starts here */}
+          <NavigationBar cart={cart} setCart={setCart} />
 
-        <Switch>
-          <Route>
-            <Route exact path="/">
-              <Home />
-            </Route>
-            <Route exact path="/Home">
-              <Home />
-            </Route>
-            <Route path="/Settings">
-              <Settings />
-            </Route>
-            <Route path="/Blog">
-              <Blog />
-            </Route>
-            <Route path="/Docs">
-              <Docs />
-            </Route>
-            <Route path="/Careers">
-              <Careers />
-            </Route>
+          <Switch>
+            <Route>
+              <Route exact path="/">
+                <Home />
+              </Route>
+              <Route exact path="/Home">
+                <Home />
+              </Route>
+              <Route path="/Settings">
+                <Settings />
+              </Route>
+              <Route path="/Blog">
+                <Blog />
+              </Route>
+              <Route path="/Docs">
+                <Docs />
+              </Route>
+              <Route path="/Careers">
+                <Careers />
+              </Route>
 
-            <Route path="/ContactUs">
-              <ContactUs />
-            </Route>
-            <Route path="/Discord">
-              <Discord />
-            </Route>
-            <Route path="/Rankings">
-              <Rankings />
-            </Route>
-            <Route path="/Activity">
-              <Activity />
-            </Route>
-            <Route path="/Newsletter">
-              <Newsletter />
-            </Route>
-            <Route path="/Login">
-              <Login
-                setIsLoggedIn={setIsLoggedIn}
-                isLoggedIn={isLoggedIn}
-                setUsername={setUsername}
-                username={username}
-              />
-            </Route>
-            <Route path="/Register">
-              <Register
-                setIsLoggedIn={setIsLoggedIn}
-                isLoggedIn={isLoggedIn}
-                setUsername={setUsername}
-                username={username}
-              />
-            </Route>
-            <Route path="/About">
-              <About />
-            </Route>
-            <Route path="/Profile">
-              <Profile />
-            </Route>
-            <Route path="/All_Nfts">
-              <AllNft allProducts={allProducts}/>
-            </Route>
-            <Route />
+              <Route path="/ContactUs">
+                <ContactUs />
+              </Route>
+              <Route path="/Discord">
+                <Discord />
+              </Route>
+              <Route path="/Rankings">
+                <Rankings />
+              </Route>
+              <Route path="/Activity">
+                <Activity />
+              </Route>
+              <Route path="/Newsletter">
+                <Newsletter />
+              </Route>
+              <Route path="/Login">
+                <Login
+                  setIsLoggedIn={setIsLoggedIn}
+                  isLoggedIn={isLoggedIn}
+                  setUsername={setUsername}
+                  username={username}
+                />
+              </Route>
+              <Route path="/Register">
+                <Register
+                  setIsLoggedIn={setIsLoggedIn}
+                  isLoggedIn={isLoggedIn}
+                  setUsername={setUsername}
+                  username={username}
+                />
+              </Route>
+              <Route path="/About">
+                <About />
+              </Route>
+              <Route path="/Profile">
+                <Profile />
+              </Route>
+              <Route path="/All_Nfts">
+                <AllNft allProducts={allProducts} />
+              </Route>
+              <Route />
 
-            {/* Daniel ends here */}
-          </Route>
-        </Switch>
+              {/* Daniel ends here */}
+            </Route>
+          </Switch>
+          <div class="wrapper flex-grow-1"></div>
+          <Footer className="mt-auto"/>
+        </div>
       </div>
-      <Footer />
+
       {/* Evan starts here */}
       {/* The products is appearing on a few pages */}
       {/* <Products allProducts={allProducts}/> */}

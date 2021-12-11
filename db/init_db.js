@@ -1,5 +1,5 @@
 // code to build and initialize DB goes here
-
+//what is "orderItem" below on line 15?
 const { createUser, createProduct } = require("./");
 const client = require("./client");
 
