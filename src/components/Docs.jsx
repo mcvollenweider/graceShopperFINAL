@@ -9,11 +9,14 @@ import {
 function Docs() {
   return (
     <div>
-      <br /> <br /> <br /> <br /> <br />
+      <br /> <br />
       <Container>
       <Col md={{ span: 4, offset: 4 }}>
-        <h1>FAQS</h1>
-        <br />  
+        <h2>Frequently Asked Questions</h2>
+        <br /> 
+        </Col>
+        </Container>
+        <Container> 
         <DropdownButton id="dropdown-item-button" title="What is an NFT?">
           <Dropdown.ItemText>
             <b> What is an NFT? </b>
@@ -39,7 +42,7 @@ function Docs() {
             partnership request
           </Dropdown.ItemText>
         </DropdownButton>
-        </Col>
+        
       </Container>
       <br /> <br /> <br /> <br /> <br /> <br /> <br />
     </div>
