@@ -35,6 +35,7 @@ usersRouter.post("/login", async (req, res, next) => {
           expiresIn: "1h",
         }
       );
+      console.log('routes users', user)
       res.send({ user, token, message: "you are logged in!" });
     }
   } catch (error) {

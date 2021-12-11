@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import ReactDOM from "react-dom";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
-import sampleProduct_DATA from "./api/structures";
+
 
 
 import {
@@ -24,12 +24,10 @@ import {
 } from "./components";
 
 const App = () => {
-  let products = sampleProduct_DATA();
   const [isLoggedIn, setIsLoggedIn] = useState(false);
   const [username, setUsername] = useState("");
   const [cart, setCart] = useState([]);
-  let { fakeData } = sampleProduct_DATA(); 
-  let allProducts = fakeData;
+
 
   return (
     <Router>
@@ -93,7 +91,7 @@ const App = () => {
                 <Profile />
               </Route>
               <Route path="/All_Nfts">
-                <AllNft allProducts={allProducts} />
+                <AllNft />
               </Route>
               <Route />
 
