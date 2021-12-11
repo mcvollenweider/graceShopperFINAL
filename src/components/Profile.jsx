@@ -13,8 +13,8 @@ import {
 } from "react-bootstrap";
 import { getUser } from "../auth";
 
-const Profile = () => {
-
+const Profile = ({allProducts}) => {
+  let products = allProducts.fakeData
   let userName = getUser();
 
   return (
@@ -31,6 +31,8 @@ const Profile = () => {
         <Card.Footer className="text-muted">2 days ago</Card.Footer>
       </Card>
       </Container>
+
+      
       <br /> <br /> <br /> <br /> <br /> <br /> <br />
       <br /> <br /> <br /> <br /> <br /> <br /> <br />
       <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br />
