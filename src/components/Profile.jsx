@@ -14,6 +14,7 @@ import {
 import { getUser } from "../auth";
 
 const Profile = () => {
+  
   let userName = getUser();
 
   return (
@@ -31,7 +32,7 @@ const Profile = () => {
       </Card>
       </Container>
 
-      
+
       <br /> <br /> <br /> <br /> <br /> <br /> <br />
       <br /> <br /> <br /> <br /> <br /> <br /> <br />
       <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br />
@@ -40,3 +41,5 @@ const Profile = () => {
 };
 
 export default Profile;
+
+
