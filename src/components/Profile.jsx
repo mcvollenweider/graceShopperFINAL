@@ -20,22 +20,15 @@ const Profile = ({userProducts}) => {
   return (
     <div>
       <Container>
-      <Card className="text-center">
-        <Card.Header>User Profile</Card.Header>
-        <Card.Body>
-          <Card.Title>{userName}</Card.Title>
-          <Card.Text>
-            Browse through your own NFTs below
-          </Card.Text>
-        </Card.Body>
-        <Card.Footer className="text-muted">2 days ago</Card.Footer>
-      </Card>
+        <Card className="text-center">
+          <Card.Header>User Profile</Card.Header>
+          <Card.Body>
+            <Card.Title>{userName}</Card.Title>
+            <Card.Text>Browse through your own NFTs below</Card.Text>
+          </Card.Body>
+          <Card.Footer className="text-muted">2 days ago</Card.Footer>
+        </Card>
       </Container>
-
-      
-      <br /> <br /> <br /> <br /> <br /> <br /> <br />
-      <br /> <br /> <br /> <br /> <br /> <br /> <br />
-      <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br />
     </div>
   );
 };
