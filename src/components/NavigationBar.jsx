@@ -12,7 +12,7 @@ import {
 } from "react-bootstrap";
 
 import { useState } from "react";
-import { Cart,  Cart_OffCanvas} from "./Cart";
+import  Cart from "./Cart";
 
 function NavigationBar() {
   const [show, setShow] = useState(false);  

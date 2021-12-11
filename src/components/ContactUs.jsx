@@ -3,7 +3,7 @@ import React, { useRef } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import * as emailjs from "emailjs-com";
 
-export default function ContactUs() {
+function ContactUs() {
   const form = useRef();
 
   const sendEmail = (e) => {
@@ -92,3 +92,5 @@ export default function ContactUs() {
     </div>
   );
 }
+
+export default ContactUs;

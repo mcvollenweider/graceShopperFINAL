@@ -207,6 +207,3 @@ const client = require("./client");
     }
   }
   rebuildDB();
-
-
-  

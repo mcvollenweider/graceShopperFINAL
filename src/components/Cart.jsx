@@ -1,8 +1,8 @@
 import React from "react";
-import {Row, Col, Button, Offcanvas} from "react-bootstrap";
+import {Row, Col, Button, Offcanvas, Nav} from "react-bootstrap";
 import { FaCartPlus } from "react-icons/fa";
 
-export function Cart({show, setShow}) {
+ function Cart({show, setShow}) {
 
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
@@ -10,14 +10,16 @@ export function Cart({show, setShow}) {
   return (
     <>
       <Row
-        style={{ color: "white", fontSize: "1.5em" }}
+        variant={"dark"}
+        style={{ fontSize: "1em" }}
         onClick={handleShow}
         className="h-100 justify-content-center align-items-center text-center hover-cart"
       >
-        <Col border="primary" md={12}>
-          
-          <FaCartPlus />
-          <span style={{ fontSize: "70%", marginRight: "50px" }}> Cart</span>
+        <Col className="d-flex" border="primary" md={12}>
+          <u>
+            <FaCartPlus style={{ marginRight: "10px" }} />
+            Cart
+          </u>
         </Col>
       </Row>
       {/*This is the cart modal and only shows when the cart button is clicked*/}
@@ -37,4 +39,4 @@ export function Cart({show, setShow}) {
   );
 }
 
-// export default Cart;
+export default Cart;
