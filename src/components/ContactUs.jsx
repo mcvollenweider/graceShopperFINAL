@@ -71,7 +71,7 @@ function ContactUs() {
                 />
               </div>
               <div className="col-8 form-group pt-3 mx-auto">
-                <textarea  
+                <textarea           
                   className="form-control"
                   id=""
                   cols="30"
