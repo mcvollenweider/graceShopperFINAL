@@ -1,3 +1,4 @@
+
 const client = require("./client");
 
 async function createProduct({author, name, price, current_owner, image_url, for_sale, description, user_chain}){
@@ -66,4 +67,3 @@ async function createProduct({author, name, price, current_owner, image_url, for
     pendingOrders,
   };
 
-  
