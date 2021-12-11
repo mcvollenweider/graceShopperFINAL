@@ -9,4 +9,7 @@ a.navbar-link {
   body {
     font-family: Roboto, Helvetica, Arial, sans-serif;
   }
-  
+  .hover-cart {
+    cursor: pointer !important;
+  }
+
