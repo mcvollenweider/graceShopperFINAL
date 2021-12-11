@@ -1,6 +1,6 @@
 import React from "react";
 import { MDBFooter, MDBContainer, MDBRow, MDBCol } from "mdb-react-ui-kit";
-import logo from "./favicon-32x32.png";
+import favicon from './images/favicon-32x32.png';
 
 export default function App() {
   return (
@@ -10,7 +10,7 @@ export default function App() {
           <MDBCol lg="5" md="12" className="mb-4 mb-md-0 ">
             <br />
             <h5 className="text-uppercase">
-              <img src={logo} /> &nbsp; Shoppers Delight
+              <img src={favicon} /> &nbsp; Shoppers Delight
             </h5>
             <br />
             <p>

@@ -1,10 +1,11 @@
 //Replace the photos with yours and add a short bio. -Dan
 
 import React from "react";
-import image from "./Daniel_Rivera.jpg";
-import about_us from "./Challenges-of-Fintech-EDM.png";
-import evan from "./Evan.jpg";
-import christian from "./Christian.jpg"
+import dan from "./images/Daniel_Rivera.jpg";
+import aboutUs from "./images/Challenges-of-Fintech-EDM.png";
+import evan from "./images/Evan.jpg";
+import christian from "./images/Christian.jpg";
+
 
 function About() {
   return (
@@ -27,7 +28,7 @@ function About() {
               
               <div className="text-white">
               <img
-                    src={about_us}
+                    src={aboutUs}
                     alt="about us"
                     style={{
                       maxWidth: "40%",
@@ -141,7 +142,7 @@ function About() {
               <div class="col-4 text-white">
                 <div className="img-fluid ">
                   <img
-                    src={image}
+                    src={dan}
                     alt="world"
                     style={{
                       maxWidth: "100%",

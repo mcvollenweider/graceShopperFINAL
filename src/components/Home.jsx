@@ -1,10 +1,10 @@
 //Daniel is doing home page
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-import logo from "./220px-NFT_Icon.png";
+import logo from './images/nft_icon.png';
 
 // import logo from './favicon-32x32.png';
-
+console.log(logo)
 const Home = () => {
   return (
     <div>
