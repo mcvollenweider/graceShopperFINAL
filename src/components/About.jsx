@@ -104,7 +104,7 @@ function About() {
             <div class="row justify-content-evenly">
               <div class="col-4 text-white">
                 <div className="img-fluid ">
-                  <img
+                  <img    
                     src={evan}
                     alt="evan"
                     style={{
