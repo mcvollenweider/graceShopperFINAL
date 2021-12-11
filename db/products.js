@@ -66,4 +66,3 @@ async function createProduct({author, name, price, current_owner, image_url, for
     getAllProducts,
     pendingOrders,
   };
-
