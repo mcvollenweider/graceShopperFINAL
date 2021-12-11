@@ -59,13 +59,7 @@ async function createProduct({author, name, price, current_owner, image_url, for
       throw err;
     }
   }
-
-
-
-
-
   
-
   module.exports = {
     createProduct,
     getSingleProduct,

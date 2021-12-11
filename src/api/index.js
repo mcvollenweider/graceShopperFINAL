@@ -5,7 +5,6 @@ const BASE = "http://localhost:5000/api";
 export async function getUsers() {
   try {
     const { data } = await axios.get(`${BASE}/users`);
-
     return data;
   } catch (error) {
     throw error;
@@ -34,6 +33,14 @@ export async function registerUser(username, password) {
     storeToken(data.token);
     storeUser(data.user.username);
     console.log(data.token);
+    return data;
+  } catch (error) {
+    throw error;
+  }
+}
+export async function getProducts() {
+  try {
+    const { data } = await axios.get(`${BASE}/all_nft`);
     return data;
   } catch (error) {
     throw error;
