@@ -68,9 +68,12 @@ async function createProduct({author, name, price, current_owner, image_url, for
 
   module.exports = {
     createProduct,
-    getSingleProduct,
-    getAllProducts,
+
     pendingOrders,
+    getAllProducts,
+    getSingleProduct,
+
+   
   };
 
   
