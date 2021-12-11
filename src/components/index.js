@@ -8,6 +8,7 @@ export { default as NavigationBar } from './NavigationBar'
 export { default as Settings } from './Settings'
 export { default as Docs } from './Docs'
 export { default as Careers } from './Careers'
+export { default as Careers2 } from './Careers2'
 export { default as Profile } from "./Profile"
 export { default as Login } from "./Login"
 export { default as Register } from "./Register"
