@@ -9,7 +9,7 @@ function Discord() {
       className="text-center p-1 mb-1 mb-md-0"
       style={{
         backgroundColor: "black",
-        height: "67vh",
+        height: "100vh",
         backgroundSize: "100%",
       }}
     >

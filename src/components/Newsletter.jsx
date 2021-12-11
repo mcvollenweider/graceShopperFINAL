@@ -10,7 +10,7 @@ function Newsletter() {
         style={{
           backgroundImage:
             "url('https://i2.wp.com/files.123freevectors.com/wp-content/original/115982-abstract-cool-blue-blurred-lights-background-design.jpg?w=800&q=95)",
-          height: "66.5vh",
+          height: "100vh",
           backgroundSize: "100%",
         }}
       >
@@ -18,11 +18,12 @@ function Newsletter() {
           class="mask"
           style={{
             backgroundColor: "rgba(0, 0, 0, 0.6)",
-            height: "70vh",
+            height: "100vh",
             backgroundSize: "100%",
           }}
         >
           <div>
+            <br></br><br></br><br></br><br></br><br></br>
             <h1 className="text-center text-white p-5 mb-3 mb-md-0">
               Subscribe To Our Newsletter!
             </h1>

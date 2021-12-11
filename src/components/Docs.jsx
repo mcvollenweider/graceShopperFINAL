@@ -9,10 +9,28 @@ import {
 function Docs() {
   return (
     <div>
+      <div
+      className="bg-image "
+      style={{
+        backgroundImage:
+          "url('https://i2.wp.com/files.123freevectors.com/wp-content/original/115982-abstract-cool-blue-blurred-lights-background-design.jpg?w=800&q=95)",
+        height: "100vh",
+        backgroundSize: "100%",
+      }}
+    >
+       <div
+        class="mask"
+        style={{
+          backgroundColor: "rgba(0, 0, 0, 0.6)",
+          height: "100vh",
+          backgroundSize: "100%",
+        }}
+      >
       <br /> <br />
       <Container>
+        <br></br><br></br><br></br>
       <Col md={{ span: 4, offset: 4 }}>
-        <h2>Frequently Asked Questions</h2>
+        <h2 className="text-white">Frequently Asked Questions</h2>
         <br /> 
         </Col>
         </Container>
@@ -44,7 +62,8 @@ function Docs() {
         </DropdownButton>
         
       </Container>
-      <br /> <br /> <br /> <br /> <br /> <br /> <br />
+      </div>
+      </div>
     </div>
   );
 }
