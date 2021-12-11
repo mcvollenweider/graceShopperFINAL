@@ -1,46 +1,94 @@
-//Daniel is doing
-import React from "react";
+//This code is operational
+import React, { useRef } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
+import * as emailjs from "emailjs-com";
 
+export default function ContactUs() {
+  const form = useRef();
 
+  const sendEmail = (e) => {
+    e.preventDefault();
 
-function ContactUs() {
+    emailjs
+      .sendForm(
+        "service_jvh0hxy",
+        "my_b7xwtxo",
+        form.current,
+        "user_iHMCBo24yMeW4mLoL8ZKw"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+    form.current.reset();
+  };
+
   return (
-
-    <form >
-      
-      <div class="d-flex justify-content-center">
-      <h1><br/>Contact Us</h1>
-      </div>
-      <div class="d-flex justify-content-center">
-      <div class="col-sm-3 col-md-6">
-
-<br/>
-<label for="exampleFormControlInput1">Email address</label>
-<input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com"/>
-</div>
-      </div>
-  
-<br/>
-<br/>
-<div class="d-flex justify-content-center">
-<div class="col-sm-3 col-md-6">
-    <label for="exampleFormControlTextarea1">Please explain in details:</label>
-    <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Type here" rows="3"></textarea>
-  </div>
-</div>
-  
-  <br/>
-  <br/>
-  <div class="d-flex justify-content-center">
-  <button type="submit" class="btn btn-primary">Submit</button>
-  </div>
-  
-  <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/> 
-</form>
-
     
+    <div
+      className="bg-image"
+      style={{
+        backgroundImage:
+          "url('https://i2.wp.com/files.123freevectors.com/wp-content/original/115982-abstract-cool-blue-blurred-lights-background-design.jpg?w=800&q=95)",
+        backgroundSize: "100%",
+        backgroundRepeat: "repeat",
+      }}
+    >
+      
+      <div class="mask" style={{ backgroundColor: "rgba(0, 0, 0, 0.6)" }}>
+      <div>
+      <h1 className="text-center text-white p-4 mt-0 mb-1 mb-md-0">Contact Us</h1>
+        <div className="container">
+          <form ref={form} onSubmit={sendEmail}>
+            <div className="row pt-5 mx-auto">
+              <div className="col-8 form-group mx-auto">
+                <input
+                  type="text"
+                  className="form-control"
+                  placeholder="Name"
+                  name="name"
+                />
+              </div>
+              <div className="col-8 form-group pt-3 mx-auto">
+                <input
+                  type="email"
+                  className="form-control"
+                  placeholder="Email Address"
+                  name="email"
+                />
+              </div>
+              <div className="col-8 form-group pt-3 mx-auto">
+                <input
+                  type="text"
+                  className="form-control"
+                  placeholder="Subject"
+                  name="subject"
+                />
+              </div>
+              <div className="col-8 form-group pt-3 mx-auto">
+                <textarea
+                  className="form-control"
+                  id=""
+                  cols="30"
+                  rows="8"
+                  placeholder="Your message"
+                  name="message"
+                ></textarea>
+              </div>
+              <div className="text-center p-4 mb-1 mb-md-0">
+                <button type="button" class="btn btn-primary">
+                  Send
+                </button>
+              </div>
+            </div>
+          </form>
+          </div>
+        </div>
+      </div>
+    </div>
   );
 }
-
-export default ContactUs;

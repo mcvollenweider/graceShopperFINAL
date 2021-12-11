@@ -1,4 +1,4 @@
-const md5 = require('md5'); //use this later, this is just a reminder placement since it's unused.
+// const md5 = require('md5'); //use this later, this is just a reminder placement since it's unused.
 // const fs = require('fs');
 // const md5 = require('md5');
 
