@@ -16,6 +16,7 @@ import {
   Settings,
   Docs,
   Careers,
+  Careers2,
   AllNft,
   Profile,
   Login,
@@ -54,6 +55,9 @@ const App = () => {
               </Route>
               <Route path="/Careers">
                 <Careers />
+              </Route>
+              <Route path="/Careers2">
+                <Careers2 />
               </Route>
 
               <Route path="/ContactUs">
