@@ -3,7 +3,7 @@
 //import bootstrap-react components
 import { Row, Col, Container, Card, ListGroup, ListGroupItem } from "react-bootstrap";
 //import { getProducts } from "./api";
-import { getAllProducts } from "./api";
+import { getAllProducts } from "../api";
 import React from "react";
 
 

@@ -13,8 +13,7 @@ import {
 } from "react-bootstrap";
 import { getUser } from "../auth";
 
-const Profile = ({allProducts}) => {
-  let products = allProducts.fakeData
+const Profile = () => {
   let userName = getUser();
 
   return (
