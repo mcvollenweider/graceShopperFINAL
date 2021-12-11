@@ -37,11 +37,9 @@ function requireUser(req, res, next) {
 		}
 		if (notSent.length)
 		  next({
-			name: "MissingParams",
-			message: `Required Parameters not sent in body: ${notSent.join(
-			  ", "
-			)}`,
-		  });
+        name: "MissingParams",
+        message: `Required Parameters not sent in body: ${notSent.join(", ")}`,
+      });
 		next();
 	  }
 	};

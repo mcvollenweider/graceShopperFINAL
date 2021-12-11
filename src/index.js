@@ -24,7 +24,6 @@ import {
   Profile,
   Login,
   Register,
-  Products,
 } from "./components";
 
 const App = () => {
@@ -34,8 +33,7 @@ const App = () => {
   const [cart, setCart] = useState([]);
   let { fakeData } = sampleProduct_DATA(); 
   let allProducts = fakeData;
-  
-console.log(allProducts);
+
   return (
     <Router>
       <div className="App">
@@ -109,7 +107,7 @@ console.log(allProducts);
               {/* Daniel ends here */}
             </Route>
           </Switch>
-          <div class="wrapper flex-grow-1"></div>
+          <div className="wrapper flex-grow-1"></div>
           <Footer className="mt-auto"/>
         </div>
       </div>

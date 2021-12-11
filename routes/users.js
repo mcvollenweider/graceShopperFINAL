@@ -4,6 +4,7 @@ const jwt = require("jsonwebtoken");
 const { createUser, getUser, getUserByUsername } = require("../db/users");
 const { JWT_SECRET } = process.env;
 const { requireUser } = require("./utils");
+
 usersRouter.get("/me", requireUser, async (req, res, next) => {
   try {
     res.send(req.user);
