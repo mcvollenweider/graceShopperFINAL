@@ -38,9 +38,10 @@ export async function registerUser(username, password) {
     throw error;
   }
 }
-export async function getProducts() {
+export async function getAllProducts() {
   try {
-    const { data } = await axios.get(`${BASE}/all_nft`);
+    const { data } = await axios.get(`${BASE}/all_nfts`);
+    console.log('api index js', data)
     return data;
   } catch (error) {
     throw error;
