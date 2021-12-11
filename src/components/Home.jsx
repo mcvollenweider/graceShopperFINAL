@@ -7,7 +7,7 @@ const Home = () => {
   return (
     <div>
       <div>
-        <div class="mask" style={{ backgroundColor: "rgba(0, 0, 0, 0.8)" }}>
+        
           <div
             className="bg-image"
             style={{
@@ -17,6 +17,8 @@ const Home = () => {
               backgroundSize: "100%",
             }}
           >
+            <div class="mask" style={{ backgroundColor: "rgba(0, 0, 0, 0.6)", height: "100vh",
+              backgroundSize: "100%", }}>
             <br></br>
             <br></br>
             <div class="row justify-content-evenly" data-toggle="collapse">
