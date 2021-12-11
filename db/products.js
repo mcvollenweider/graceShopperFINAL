@@ -1,30 +1,73 @@
-const client = require('../db/client');
-//write a function that is going to add a product to the database
-//it should take in a product object as an argument
-//the function should return a promise
-//the function should use the client to query the database
-//the function should return the product object
-//the function should throw an error if the product is not successfully added to the database
+const client = require("./client");
 
-async function createProduct({ name, author, price, description, previousOwners, imageUrl }) {
+async function createProduct({author, name, price, current_owner, image_url, for_sale, description, user_chain}){
     try {
       const {
-        rows: [product],
+        rows: [products],
       } = await client.query(
-        `
-           INSERT INTO routines("name", "author", "price", "description", "previousOwners", "imageUrl")
-           VALUES ($1, $2, $3, $4, $5, $6)
-           RETURNING *;
-           `,
-        [name, author, price, description, previousOwners, imageUrl]
+        `INSERT INTO products (author, name, price, current_owner, image_url, for_sale, description, user_chain)
+         VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING * ;`,
+        [
+          author,
+          name,
+          price,
+          current_owner,
+          image_url,
+          for_sale,
+          description,
+          user_chain,
+        ]
       );
-     return product;
-    } catch (error) {
-      throw error;
+      return products;
+    } catch (err) {
+      throw err;
     }
   }
 
-  export default createProduct;
+  async function getSingleProduct({ id }) {
+    if (!id) {
+      return 'No product ID provided';
+    }
+    try {
+      const {
+        rows: [product],
+      } = await client.query(`SELECT * FROM products WHERE id = $1;`, [id]);
+      return product;
+    } catch (err) {
+      throw err;
+    }
+  }
 
+  async function getAllProducts() {
+    try {
+      const {
+        rows: [products],
+      } = await client.query(`SELECT * FROM products ;`);
+      return products;
+    } catch (err) {
+      throw err;
+    }
+  }
+
+  async function pendingOrders() {
+    try {
+      const {
+        rows: [pendingOrders],
+      } = await client.query(`SELECT * FROM pending_orders ;`);
+      return pendingOrders;
+    } catch (err) {
+      throw err;
+    }
+  }
+
+
+
+
+
+  
+
+  module.exports = {
+    createProduct,
+  };
 
   
