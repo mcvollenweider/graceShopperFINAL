@@ -6,7 +6,6 @@ import aboutUs from "./images/Challenges-of-Fintech-EDM.png";
 import evan from "./images/Evan.jpg";
 import christian from "./images/Christian.jpg";
 
- 
 function About() {
   return (
     <div>
@@ -25,24 +24,25 @@ function About() {
 
           <div class="container">
             <div class="row justify-content-start">
-              
               <div className="text-white">
-              <img
-                    src={aboutUs}
-                    alt="about us"
-                    style={{
-                      maxWidth: "40%",
-                      height: "auto",
-                      maxHeight: "100%",
-                    }}
-                  />
-                <h1 className="row justify-content-center text-white"> About us </h1>
+                <img
+                  src={aboutUs}
+                  alt="about us"
+                  style={{
+                    maxWidth: "40%",
+                    height: "auto",
+                    maxHeight: "100%",
+                  }}
+                />
+                <h1 className="row justify-content-center text-white">
+                  {" "}
+                  About us{" "}
+                </h1>
                 <br></br>
                 <br></br>
-                
+
                 <div>
                   {" "}
-                  
                   <p className="text-white">
                     Lorem Ipsum is simply dummy text of the printing and
                     typesetting industry. Lorem Ipsum has been the industry's
@@ -55,12 +55,10 @@ function About() {
                     passages, and more recently with desktop publishing software
                     like Aldus PageMaker including versions of Lorem Ipsum.
                   </p>
-                 
                 </div>
               </div>
             </div>
             <div class="row justify-content-evenly">
-              
               <div class="col-4 text-white">
                 <div className="img-fluid ">
                   <h1></h1>
@@ -102,11 +100,11 @@ function About() {
                 </div>
               </div>
             </div>
-           
+
             <div class="row justify-content-evenly">
               <div class="col-4 text-white">
                 <div className="img-fluid ">
-                  <img
+                  <img    
                     src={evan}
                     alt="evan"
                     style={{
@@ -143,28 +141,29 @@ function About() {
                 <div className="img-fluid ">
                   <img
                     src={dan}
-                    alt="world"
+                    alt="dan"
                     style={{
                       maxWidth: "100%",
                       height: "auto",
                       maxHeight: "100%",
                     }}
                   />
-                  <p>
-                    There are many variations of passages of Lorem Ipsum
-                    available, but the majority have suffered alteration in some
-                    form, by injected humour, or randomised words which don't
-                    look even slightly believable. If you are going to use a
-                    passage of Lorem Ipsum, you need to be sure there isn't
-                    anything embarrassing hidden in the middle of text. All the
-                    Lorem Ipsum generators on the Internet tend to repeat
-                    predefined chunks as necessary, making this the first true
-                    generator on the Internet. It uses a dictionary of over 200
-                    Latin words, combined with a handful of model sentence
-                    structures, to generate Lorem Ipsum which looks reasonable.
-                    The generated Lorem Ipsum is therefore always free from
-                    repetition, injected humour, or non-characteristic words
-                    etc.
+                  <p>&nbsp;&nbsp;&nbsp;&nbsp;
+                    Daniel Rivera graduated from Fullstack Academy as a Junior
+                    Software Engineer. He strives to expand his knowledge to
+                    what is possible with code in order to make life more
+                    efficient for all. During his time at Fullstack Academy he
+                    created many projects using a text editor named Visual
+                    Studio Code. He now has experience with Node.js, Express.js,
+                    Postgresql,Ubuntu(WSL), GitBash,GitHub,Heroku, JavaScript,
+                    HTML, CSS,React, and more.
+                  </p>
+                  <p>&nbsp;&nbsp;&nbsp;&nbsp;
+                    Daniel has always been around technology ever since a little
+                    boy. His father was always engaging him in building
+                    computers and teaching him the aspects of technology. After
+                    the years of learning from his father he had dreams to
+                    become a software engineer to serve clients needs.{" "}
                   </p>
                 </div>
               </div>
