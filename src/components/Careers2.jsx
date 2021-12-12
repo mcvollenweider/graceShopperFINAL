@@ -4,22 +4,9 @@ function Careers2() {
   return (
     <div>
       <div
-        className="bg-image "
-        style={{
-          backgroundImage:
-            "url('https://i2.wp.com/files.123freevectors.com/wp-content/original/115982-abstract-cool-blue-blurred-lights-background-design.jpg?w=800&q=95)",
-          height: "110vh",
-          backgroundSize: "100%",
-        }}
-      >
+        className="bg-image ">
         <div
-          class="mask"
-          style={{
-            backgroundColor: "rgba(0, 0, 0, 0.6)",
-            height: "110vh",
-            backgroundSize: "100%",
-          }}
-        >
+          class="mask">
           
           <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css" integrity="sha256-3sPp8BkKUE7QyPSl6VfBByBroQbKxKG7tsusY2mhbVY=" crossorigin="anonymous" />
 
