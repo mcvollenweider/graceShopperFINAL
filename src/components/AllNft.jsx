@@ -11,7 +11,7 @@ const AllNft = (props) => {
 
 let [allProducts, setAllProducts] = useState([]);
 
-
+ 
 
 const fetchAllProducts = async () => {
   const products = await getAllProducts();
