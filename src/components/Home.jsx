@@ -1,4 +1,4 @@
-//Daniel is doing home page
+t//Daniel is doing home page
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import logo from "./images/nft_icon.png";
@@ -32,7 +32,7 @@ const Home = () => {
             <br></br>
             <div class="row justify-content-end">
               <div class="col-7">
-                <a href="docs" title="">
+                <a href="register" title="">
                   <img className="img-responsive" src={logo} alt="Image" />
                 </a>
               </div>
