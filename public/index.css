@@ -1,20 +1,25 @@
 a.navbar-link {
-    padding: 10px;
-    text-decoration: none;
-    color: black;
-  }
-  a.navbar-link:hover {
-    font-size: 200%;
-  }
-  body {
-    font-family: Roboto, Helvetica, Arial, sans-serif;
-  }
-  .hover-cart {
-    cursor: pointer !important;
-  }
-  body{
-    background:#f5f5f5;
-    margin-top:20px;}
+  padding: 10px;
+  text-decoration: none;
+  color: black;
+}
+
+a.navbar-link:hover {
+  font-size: 200%;
+}
+
+body {
+  font-family: Roboto, Helvetica, Arial, sans-serif;
+}
+
+.hover-cart {
+  cursor: pointer !important;
+}
+
+body {
+  background: #f5f5f5;
+  margin-top: 20px;
+}
 
 /* ===== This is the Career Form ===== */
 .career-form {
@@ -34,8 +39,9 @@ a.navbar-link {
   /* This works on Chrome/Opera/Safari */
   color: white;
 }
-option{
-  color:black
+
+option {
+  color: black
 }
 
 .career-form .form-control::-moz-placeholder {
@@ -67,7 +73,7 @@ option{
 
 .career-form .custom-select:focus {
   -webkit-box-shadow: none;
-          box-shadow: none;
+  box-shadow: none;
 }
 
 .career-form .select-container {
@@ -86,13 +92,13 @@ option{
 
 .filter-result .job-box {
   -webkit-box-shadow: 0 0 35px 0 rgba(130, 130, 130, 0.2);
-          box-shadow: 0 0 35px 0 rgba(130, 130, 130, 0.2);
+  box-shadow: 0 0 35px 0 rgba(130, 130, 130, 0.2);
   border-radius: 10px;
   padding: 10px 35px;
 }
 
 ul {
-  list-style: none; 
+  list-style: none;
 }
 
 .list-disk li {
@@ -118,11 +124,11 @@ ul {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   border-radius: 65px;
 }
 
@@ -138,7 +144,7 @@ ul {
 
 .job-overview {
   -webkit-box-shadow: 0 0 35px 0 rgba(130, 130, 130, 0.2);
-          box-shadow: 0 0 35px 0 rgba(130, 130, 130, 0.2);
+  box-shadow: 0 0 35px 0 rgba(130, 130, 130, 0.2);
   border-radius: 10px;
 }
 
@@ -190,7 +196,17 @@ ul {
   position: relative;
   top: 1px;
 }
+
 .mb-30 {
-    margin-bottom: 30px;
+  margin-bottom: 30px;
 }
 
+.bg-image {
+  background-color: black;
+  padding-bottom: 40%;
+  padding-top: 5%;
+  background-size: cover;
+  background-image: url("https://wallpapercave.com/wp/wp9152367.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.5)), url("https://wallpapercave.com/wp/wp9152367.jpg");
+  background-repeat: no-repeat;
+}
