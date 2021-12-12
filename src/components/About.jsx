@@ -6,7 +6,7 @@ import aboutUs from "./images/Challenges-of-Fintech-EDM.png";
 import evan from "./images/Evan.jpg";
 import christian from "./images/Christian.jpg";
 
-
+ 
 function About() {
   return (
     <div>
