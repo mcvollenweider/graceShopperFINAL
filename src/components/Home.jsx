@@ -32,7 +32,7 @@ const Home = () => {
             <br></br>
             <div class="row justify-content-end">
               <div class="col-7">
-                <a href="docs" title="">
+                <a href="register" title="">
                   <img className="img-responsive" src={logo} alt="Image" />
                 </a>
               </div>
