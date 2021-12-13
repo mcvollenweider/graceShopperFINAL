@@ -21,6 +21,7 @@ import {
   Profile,
   Login,
   Register,
+  Products
 } from "./components";
 
 const App = () => {
@@ -90,8 +91,11 @@ const App = () => {
               <Route path="/Profile">
                 <Profile />
               </Route>
-              <Route path="/All_Nfts">
+              <Route path="/nft">
                 <AllNft />
+              </Route>
+              <Route path="/products/item" >
+                <Products/>
               </Route>
               <Route />
 

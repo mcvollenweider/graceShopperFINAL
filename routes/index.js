@@ -52,7 +52,8 @@ const usersRouter = require("./users");
 apiRouter.use("/users", usersRouter);
 
 const productsRouter = require("./products");
-apiRouter.use("/all_nfts", productsRouter);
+apiRouter.use("/nft", productsRouter);
+apiRouter.use("/products/item/", productsRouter);
 
 
 module.exports = apiRouter;

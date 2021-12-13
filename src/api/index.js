@@ -40,8 +40,19 @@ export async function registerUser(username, password) {
 }
 export async function getAllProducts() {
   try {
-    const { data } = await axios.get(`${BASE}/all_nfts`);
-    console.log('api index js', data)
+    const { data } = await axios.get(`${BASE}/nft`);
+    console.log('get all prod', data)
+    return data;
+  } catch (error) {
+    throw error;
+  }
+}
+
+export async function getSingleProduct(id) {
+  try {
+    const { data } = await axios.get(`${BASE}/products/item`, {
+      params: id 
+    });
     return data;
   } catch (error) {
     throw error;

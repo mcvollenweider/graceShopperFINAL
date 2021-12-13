@@ -1,0 +1,70 @@
+import React from "react";
+
+import {
+  Row,
+  Col,
+  Container,
+  Card,
+  ListGroup,
+  ListGroupItem,
+  Button,
+} from "react-bootstrap";
+
+import { getSingleProduct } from "../api";
+
+import { useState, useEffect } from "react";
+import { useParams, Link } from "react-router-dom";
+
+const Products = (props) => {
+  let [singleProduct, setSingleProduct] = useState([]);
+  let { id } = useParams();
+  
+
+  const fetchSingleProduct = async () => {
+    const product = await getSingleProduct(id);
+    setSingleProduct(product);
+  };
+
+  useEffect(() => {
+    fetchSingleProduct();
+  }, []);
+
+  return (
+    <div
+      className="bg-image "
+      style={{
+        backgroundImage:
+          "url('https://i2.wp.com/files.123freevectors.com/wp-content/original/115982-abstract-cool-blue-blurred-lights-background-design.jpg?w=800&q=95)",
+        height: "100vh",
+        backgroundSize: "100%",
+      }}
+    >{console.log(singleProduct)}
+      <Container>
+        <Row className="m-5">
+          <Card
+            className="m-1"
+            key={singleProduct.id}
+            style={{ width: "18rem" }}
+          >
+            <Card.Img className="mt-3" src={singleProduct.image_url} />
+            <Card.Body className="text-center">
+              <Card.Title>
+                <Link to={`/${singleProduct.id}`}>
+                  <Button>{singleProduct.name}</Button>
+                </Link>
+              </Card.Title>
+              <Card.Text>{singleProduct.description}</Card.Text>
+              <Card.Text>{singleProduct.price}</Card.Text>
+              <Card.Text>{singleProduct.current_owner}</Card.Text>
+              <Card.Text>{singleProduct.for_sale}</Card.Text>
+            </Card.Body>
+          </Card>
+          );
+        </Row>
+        <p>this be products</p>
+      </Container>
+    </div>
+  );
+};
+
+export default Products;

@@ -16,7 +16,7 @@ const Home = () => {
       }}
     >
       <div
-        class="mask"
+        className="mask"
         style={{
           backgroundColor: "rgba(0, 0, 0, 0.6)",
           height: "100vh",
@@ -25,9 +25,9 @@ const Home = () => {
       >
         <br></br>
         <br></br>
-        <div class="container">
-          <div class="row justify-content-center">
-            <div class="col-7">
+        <div className="container">
+          <div className="row justify-content-center">
+            <div className="col-7">
               <h1 className="text-center text-white">
                 {" "}
                 Discover, collect, and sell extraordinary NFTs{" "}
@@ -35,8 +35,8 @@ const Home = () => {
             </div>
           </div>
           <br></br>
-          <div class="row justify-content-center">
-            <div class="col-7">
+          <div className="row justify-content-center">
+            <div className="col-7">
               <h4 className="text-center text-white">
                 {" "}
                 on one of the world's largest NFT marketplaces{" "}
@@ -44,8 +44,8 @@ const Home = () => {
             </div>
           </div>
           <br></br><br></br><br></br>
-          <div class="row justify-content-end">
-            <div class="col-7">
+          <div className="row justify-content-end">
+            <div className="col-7">
               
              <a href="docs" title="">
              <img  className="img-responsive" src={logo} alt="Image"/>

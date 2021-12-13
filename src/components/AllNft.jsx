@@ -1,7 +1,8 @@
 // EVAN is doing the AllNft page
 
 //import bootstrap-react components
-import { Row, Col, Container, Card, ListGroup, ListGroupItem } from "react-bootstrap";
+import { Row, Col, Container, Card, ListGroup, ListGroupItem, Button} from "react-bootstrap";
+import { Link } from 'react-router-dom';
 import { getAllProducts } from "../api";
 
 import React from "react";
@@ -16,14 +17,12 @@ let [allProducts, setAllProducts] = useState([]);
 const fetchAllProducts = async () => {
   const products = await getAllProducts();
   setAllProducts(products);
-  console.log(products);
 }
 
   useEffect(() => {
     fetchAllProducts();
   }, []);
-  console.log(allProducts);
-
+console.log(allProducts, "all products 1");
   return (
     <div
     className="bg-image "
@@ -38,7 +37,6 @@ const fetchAllProducts = async () => {
       <Row className="m-5">
         {allProducts && allProducts.length
           ? allProducts.map((product, index) => {
-          console.log(product);
               return (
                 <Card
                   className="m-1"
@@ -47,7 +45,11 @@ const fetchAllProducts = async () => {
                 >
                   <Card.Img className="mt-3" src={product.image_url} />
                   <Card.Body className="text-center">
-                    <Card.Title>{product.name}</Card.Title>
+                    <Card.Title>
+                      <Link to={`/products/item/${product.id}`}>
+                        <Button>{product.name}</Button>
+                      </Link>
+                    </Card.Title>
                     <Card.Text>{product.description}</Card.Text>
                     <Card.Text>{product.price}</Card.Text>
                     <Card.Text>{product.current_owner}</Card.Text>

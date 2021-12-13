@@ -8,8 +8,9 @@ import {
   Form,
 } from "react-bootstrap";
 
+
 import { useState } from "react";
-import  Cart from "./Cart";
+import Cart from "./Cart";
 
 function NavigationBar() {
   const [show, setShow] = useState(false);  
@@ -48,7 +49,7 @@ function NavigationBar() {
             navbarScroll
           >
             <NavDropdown title="Explore" id="navbarScrollingDropdown">
-              <NavDropdown.Item href="All_NFTs">All NFTs</NavDropdown.Item>
+              <NavDropdown.Item href="/nft">All NFTs</NavDropdown.Item>
             </NavDropdown>
 
             <NavDropdown title="Resources" id="navbarScrollingDropdown">
