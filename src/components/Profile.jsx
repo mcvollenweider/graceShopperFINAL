@@ -32,7 +32,9 @@ const Profile = () => {
   }, []);
   console.log(allProducts);
   return (
-    <div>
+    
+         <div className="bg-image">
+      <div className="mask"></div>
       <Container>
         <Card className="text-center">
           <Card.Header>User Profile</Card.Header>
@@ -45,7 +47,7 @@ const Profile = () => {
         <Row className="m-5">
           {allProducts && allProducts.length
             ? allProducts.map((product, index) => {
-                console.log(product);
+                //console.log(product);
                 if (userName === product.current_owner){
                 return (
                   <Card
