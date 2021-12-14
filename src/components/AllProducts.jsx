@@ -46,7 +46,7 @@ console.log(allProducts, "all products 1");
                   <Card.Img className="mt-3" src={product.image_url} />
                   <Card.Body className="text-center">
                     <Card.Title>
-                      <Link to={`/products/item/${product.id}`}>
+                      <Link to={`/products/${product.id}`}>
                         <Button>{product.name}</Button>
                       </Link>
                     </Card.Title>

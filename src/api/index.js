@@ -40,7 +40,7 @@ export async function registerUser(username, password) {
 }
 export async function getAllProducts() {
   try {
-    const { data } = await axios.get(`${BASE}/nft`);
+    const { data } = await axios.get(`api/products`);
     console.log('get all prod', data)
     return data;
   } catch (error) {
@@ -49,10 +49,9 @@ export async function getAllProducts() {
 }
 
 export async function getSingleProduct(id) {
+  console.log('get single prod', id)
   try {
-    const { data } = await axios.get(`${BASE}/products/item`, {
-      params: id 
-    });
+    const { data } = await axios.get(`${BASE}/products/${id}`);
     return data;
   } catch (error) {
     throw error;

@@ -17,11 +17,11 @@ import {
   Docs,
   Careers,
   Careers2,
-  AllNft,
   Profile,
   Login,
   Register,
-  Products
+  Products,
+  AllProducts
 } from "./components";
 
 const App = () => {
@@ -91,12 +91,12 @@ const App = () => {
               <Route path="/Profile">
                 <Profile />
               </Route>
-              <Route path="/nft">
-                <AllNft />
-              </Route>
-              <Route path="/products/item" >
+              <Route path="/products/:id" >
                 <Products/>
               </Route>
+              <Route path="/products">
+                <AllProducts />
+              </Route>             
               <Route />
 
               {/* Daniel ends here */}

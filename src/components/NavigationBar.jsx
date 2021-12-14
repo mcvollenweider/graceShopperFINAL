@@ -5,7 +5,7 @@ import {
   Navbar,
   Nav,
   NavDropdown,
-  Form,
+  Form
 } from "react-bootstrap";
 
 
@@ -49,7 +49,7 @@ function NavigationBar() {
             navbarScroll
           >
             <NavDropdown title="Explore" id="navbarScrollingDropdown">
-              <NavDropdown.Item href="/nft">All NFTs</NavDropdown.Item>
+              <NavDropdown.Item href="/products">All NFTs</NavDropdown.Item>
             </NavDropdown>
 
             <NavDropdown title="Resources" id="navbarScrollingDropdown">
