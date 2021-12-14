@@ -29,7 +29,7 @@ const Products = (props) => {
   useEffect(() => {
     fetchSingleProduct();
   }, []);
-
+    
   return (
     <div className="bg-image">
       <div className="mask">
