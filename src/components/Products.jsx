@@ -14,6 +14,7 @@ import { getSingleProduct } from "../api";
 
 import { useState, useEffect } from "react";
 import { useParams, Link } from "react-router-dom";
+import { FaCartPlus } from "react-icons/fa";
 
 const Products = (props) => {
   let [singleProduct, setSingleProduct] = useState([]);
@@ -38,7 +39,8 @@ const Products = (props) => {
         height: "100vh",
         backgroundSize: "100%",
       }}
-    >{console.log(singleProduct)}
+    >
+      {console.log(singleProduct)}
       <Container>
         <Row className="m-5">
           <Card
@@ -61,7 +63,9 @@ const Products = (props) => {
           </Card>
           );
         </Row>
-        <p>this be products</p>
+        <Link>
+          <FaCartPlus style={{ marginRight: "10px" }} />
+        </Link>
       </Container>
     </div>
   );
