@@ -16,8 +16,6 @@ function Careers() {
                     <div class="section-title text-center text-white">
                         <br></br>
                         <h3 class="top-c-sep">Grow your career with us</h3>
-                        <p>Lorem ipsum dolor sit detudzdae amet, rcquisc adipiscing elit. Aenean socada commodo
-                            ligaui egets dolor. Nullam quis ante tiam sit ame orci eget erovtiu faucid.</p>
                     </div>
                 </div>
             </div>
