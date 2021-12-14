@@ -66,8 +66,8 @@ function About() {
                 <p>
                   Christian Vollenweider is from Jacksonville Florida. He
                   recently decided to pursue a career change and joined the
-                  Fullstack Academy 2021 Cohort. Christian is graduating from
-                  Fullstack with a web development certificate and hopes to
+                  Fullstack Academy 2021 Cohort. Christian is graduating
+                  from Fullstack with a Web Development Certificate and hopes to
                   enter the tech field as a Front-End Developer soon.
                 </p>
               </div>
@@ -118,15 +118,21 @@ function About() {
                 />
                 <p>
                   &nbsp;&nbsp;&nbsp;&nbsp; Daniel Rivera graduated from
-                  Fullstack Academy as a Junior Software Engineer. He is
-                  currently searching for a Junior Software Engineer career as a
-                  Fullstack developer. He strives to expand his knowledge to
-                  what is possible with code in order to make life more
-                  efficient for all. During his time at Fullstack Academy he
-                  created many projects using a text editor named Visual Studio
-                  Code. He now has experience with Node.js, Express.js,
-                  Postgresql,Ubuntu(WSL), GitBash,GitHub,Heroku, JavaScript,
-                  HTML, CSS,React, and more.
+                  Fullstack Academy as a Junior Software Engineer. He strives to
+                  expand his knowledge to what is possible with code in order to
+                  make life more efficient for all. During his time at Fullstack
+                  Academy he created many projects using a text editor named
+                  Visual Studio Code. He now has experience with Node.js,
+                  Express.js, Postgresql,Ubuntu(WSL), GitBash,GitHub,Heroku,
+                  JavaScript, HTML, CSS,React, and more.
+                </p>
+                <p>
+                  &nbsp;&nbsp;&nbsp;&nbsp; Daniel has always been around
+                  technology ever since a little boy. His father was always
+                  engaging him in building computers and teaching him the
+                  aspects of technology. After the years of learning from his
+                  father he had dreams to become a software engineer to serve
+                  clients needs.{" "}
                 </p>
               </div>
             </div>
@@ -138,3 +144,4 @@ function About() {
 }
 
 export default About;
+
