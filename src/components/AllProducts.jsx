@@ -12,8 +12,6 @@ const AllNft = (props) => {
 
 let [allProducts, setAllProducts] = useState([]);
 
- 
-
 const fetchAllProducts = async () => {
   const products = await getAllProducts();
   setAllProducts(products);
@@ -24,15 +22,8 @@ const fetchAllProducts = async () => {
   }, []);
 console.log(allProducts, "all products 1");
   return (
-    <div
-    className="bg-image "
-    style={{
-      backgroundImage:
-        "url('https://i2.wp.com/files.123freevectors.com/wp-content/original/115982-abstract-cool-blue-blurred-lights-background-design.jpg?w=800&q=95)",
-      height: "100vh",
-      backgroundSize: "100%",
-    }}
-  >
+   <div className="bg-image">
+      <div className="mask">
     <Container>
       <Row className="m-5">
         {allProducts && allProducts.length
@@ -61,7 +52,8 @@ console.log(allProducts, "all products 1");
           : "No products found"}
       </Row>
     </Container>
-    </div>
+      </div>
+      </div>
   );
 }
 
