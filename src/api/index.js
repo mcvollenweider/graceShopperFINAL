@@ -40,8 +40,18 @@ export async function registerUser(username, password) {
 }
 export async function getAllProducts() {
   try {
-    const { data } = await axios.get(`${BASE}/products`);
-    console.log('api index js', data)
+    const { data } = await axios.get(`api/products`);
+    console.log('get all prod', data)
+    return data;
+  } catch (error) {
+    throw error;
+  }
+}
+
+export async function getSingleProduct(id) {
+  console.log('get single prod', id)
+  try {
+    const { data } = await axios.get(`${BASE}/products/${id}`);
     return data;
   } catch (error) {
     throw error;
