@@ -16,7 +16,6 @@ function Careers2() {
                     <div class="section-title text-center text-white">
                         <br></br>
                         <h3 class="top-c-sep">Grow your career with us</h3>
-                        <p>Join one of the leading Tech companies in the world. We specialize in many areas serving our clients around the globe.</p>
                     </div>
                 </div>
             </div>
