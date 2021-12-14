@@ -17,17 +17,18 @@ import {
   Docs,
   Careers,
   Careers2,
-  AllNft,
   Profile,
   Login,
   Register,
+  Products,
+  AllProducts
 } from "./components";
 
 const App = () => {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
   const [username, setUsername] = useState("");
   const [cart, setCart] = useState([]);
-
+  
 
   return (
     <Router>
@@ -90,9 +91,12 @@ const App = () => {
               <Route path="/Profile">
                 <Profile />
               </Route>
-              <Route path="/All_Nfts">
-                <AllNft />
+              <Route path="/products/:id" >
+                <Products/>
               </Route>
+              <Route path="/products">
+                <AllProducts />
+              </Route>             
               <Route />
 
               {/* Daniel ends here */}
