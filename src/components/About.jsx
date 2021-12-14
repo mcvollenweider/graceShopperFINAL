@@ -67,7 +67,7 @@ function About() {
                   Christian Vollenweider is from Jacksonville Florida. He
                   recently decided to pursue a career change and joined the
                   Fullstack Academy 2021 Cohort. Christian is graduating
-                  from Fullstack with a web development certificate and hopes to
+                  from Fullstack with a Web Development Certificate and hopes to
                   enter the tech field as a Front-End Developer soon.
                 </p>
               </div>
