@@ -1,4 +1,4 @@
-t//Daniel is doing home page
+//Daniel is doing home page
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import logo from "./images/nft_icon.png";
