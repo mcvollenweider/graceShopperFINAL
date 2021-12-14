@@ -1,7 +1,7 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Image, Container, Row, Col, Button } from "react-bootstrap";
-import logo from "./shutterstock_112158140.jpg";
+import logo from "./images/shutterstock_112158140.jpg";
 
 function Discord() {
   return (

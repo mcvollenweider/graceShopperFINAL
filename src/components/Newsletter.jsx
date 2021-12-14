@@ -1,5 +1,4 @@
 //This code is operational
-import "bootstrap/dist/css/bootstrap.min.css";
 import React from "react";
 
 function Newsletter() {
