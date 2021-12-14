@@ -32,11 +32,11 @@ const App = () => {
 
 
   return (
+    <>
     <Router>
       <div className="App">
         <div className="d-flex flex-column min-vh-100">
-          <NavigationBar itemsInCart={cart}/>
-
+        <NavigationBar itemsInCart={cart}/>
           <Switch>
             <Route exact path="/">
               <Home />
@@ -47,7 +47,6 @@ const App = () => {
             <Route path="/Settings">
               <Settings />
             </Route>
-
             <Route path="/Docs">
               <Docs />
             </Route>
@@ -57,14 +56,12 @@ const App = () => {
             <Route path="/Careers2">
               <Careers2 />
             </Route>
-
             <Route path="/ContactUs">
               <ContactUs />
             </Route>
             <Route path="/Discord">
               <Discord />
             </Route>
-
             <Route path="/Newsletter">
               <Newsletter />
             </Route>
@@ -102,6 +99,7 @@ const App = () => {
         </div>
       </div>
     </Router>
+    </>
   );
 };
 

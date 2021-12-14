@@ -73,7 +73,6 @@ const handleCart = (product) => {
                 <Card.Text>{singleProduct.current_owner}</Card.Text>
               </Card.Body>
             </Card>
-            );
           </Row>
         </Container>
       </div>
