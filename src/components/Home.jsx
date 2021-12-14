@@ -2,7 +2,7 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import logo from "./images/nft_icon.png";
-
+//merge resolutions
 
 const Home = () => {
   return (
