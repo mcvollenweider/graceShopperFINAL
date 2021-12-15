@@ -1,14 +1,17 @@
 // EVAN is doing the AllNft page
 
 //import bootstrap-react components
+
+import React from "react";
+import { useState, useEffect } from "react";
 import { Row, Col, Container, Card, ListGroup, ListGroupItem, Button} from "react-bootstrap";
 import { Link } from 'react-router-dom';
 import { getAllProducts } from "../api";
 
-import React from "react";
-import { useState, useEffect } from "react";
 
-const AllNft = (props) => {
+
+//function component starts here
+const AllProducts = (props) => {
 
 let [allProducts, setAllProducts] = useState([]);
 
@@ -20,7 +23,7 @@ const fetchAllProducts = async () => {
   useEffect(() => {
     fetchAllProducts();
   }, []);
-console.log(allProducts, "all products 1");
+  if(typeof allProducts === 'string') {console.log(allProducts.substring(0,25))}
   return (
    <div className="bg-image">
       <div className="mask">
@@ -58,4 +61,4 @@ console.log(allProducts, "all products 1");
 }
 
 
-export default AllNft;
+export default AllProducts;

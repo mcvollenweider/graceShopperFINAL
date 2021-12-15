@@ -7,6 +7,8 @@ import {
   NavDropdown,
   Form
 } from "react-bootstrap";
+//import stuff from reactrouterdom
+import { Link } from "react-router-dom";
 
 
 import { useState } from "react";
@@ -17,13 +19,13 @@ function NavigationBar() {
   return (
     <div>
       <Navbar bg="dark" variant={"dark"} expand="lg">
-        <Navbar.Brand
-          href="Home"
+        <Link
+          to="Home"
           className="btn-group "
           style={{ paddingLeft: "2%" }}
         >
           Shoppers Delight
-        </Navbar.Brand>
+        </Link>
 
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
@@ -49,25 +51,31 @@ function NavigationBar() {
             navbarScroll
           >
             <NavDropdown title="Explore" id="navbarScrollingDropdown">
-              <NavDropdown.Item href="/products">All NFTs</NavDropdown.Item>
+              <Link to="/products">
+                All NFTs
+              </Link>
             </NavDropdown>
 
             <NavDropdown title="Resources" id="navbarScrollingDropdown">
-              <NavDropdown.Item href="ContactUs">Contact Us</NavDropdown.Item>
-              <NavDropdown.Item href="Newsletter">Newsletter</NavDropdown.Item>
+              <Link to="ContactUs">Contact Us</Link>
+              <Link to="Newsletter">Newsletter</Link>
               <NavDropdown.Divider />
-              <NavDropdown.Item href="Discord">
+              <Link to="Discord">
                 Discord Community
-              </NavDropdown.Item>
+              </Link>
             </NavDropdown>
 
             <NavDropdown title="Create" id="navbarScrollingDropdown">
-              <NavDropdown.Item href="Profile">Profile</NavDropdown.Item>
-              <NavDropdown.Item href="Login">Login</NavDropdown.Item>
-              <NavDropdown.Item href="Register">Register</NavDropdown.Item>
+              <Link to="Profile">Profile</Link>
+              <Link to="Login">Login</Link>
+              <Link to="Register">Register</Link>
             </NavDropdown>
             <Nav.Link>
-              <Cart show={show} setShow={setShow} style={{marginLeft: "5%"}}/>
+              <Cart
+                show={show}
+                setShow={setShow}
+                style={{ marginLeft: "5%" }}
+              />
             </Nav.Link>
           </Nav>
         </Navbar.Collapse>
