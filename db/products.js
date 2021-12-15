@@ -25,7 +25,7 @@ async function createProduct({author, name, price, current_owner, image_url, for
     }
   }
 
-  async function getSingleProduct({ id }) {
+  async function getSingleProduct(id) {
     if (!id) {
       return 'No product ID provided';
     }
