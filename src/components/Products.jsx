@@ -33,6 +33,7 @@ const Products = (props) => {
   }, []);
 
 const handleCart = (product) => {
+  console.log(product, "product ")
   let newCart = [...cart];
   newCart.push(product);
   newCart = newCart.filter(function (item, pos) {
