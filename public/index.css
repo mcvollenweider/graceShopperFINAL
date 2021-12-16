@@ -8,6 +8,10 @@ a.navbar-link:hover {
   font-size: 200%;
 }
 
+.remove_{
+  text-decoration: none;
+}
+
 body {
   font-family: Roboto, Helvetica, Arial, sans-serif;
 }

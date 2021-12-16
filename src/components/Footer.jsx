@@ -1,3 +1,6 @@
+//check href change to 
+
+
 import React from "react";
 import { MDBFooter, MDBContainer, MDBRow, MDBCol } from "mdb-react-ui-kit";
 import favicon from "./images/favicon-32x32.png";
@@ -28,7 +31,7 @@ export default function App() {
 
             <ul className="list-unstyled mb-0">
               <li>
-                <a href="All_NFTs" className="text-white-50">
+                <a href="products" className="text-white-50">
                   All NFTs
                 </a>
               </li>

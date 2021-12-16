@@ -14,12 +14,12 @@ const Register = ({ isLoggedIn, setIsLoggedIn }) => {
     <div
       className="bg-image">
       <div
-        class="mask">
+        className="mask">
         <Container>
           <br /> <br /> <br />
           <Col className="text-white" md={{ span: 4, offset: 4 }}>
             <h2>
-              <b class="row justify-content-center"> Please Register </b>
+              <b className="row justify-content-center"> Please Register </b>
             </h2>
             <br></br>
             <br></br>

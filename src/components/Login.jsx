@@ -21,12 +21,12 @@ const Login = ({ isLoggedIn, setIsLoggedIn, setUsername, username }) => {
     <div
       className="bg-image">
       <div
-        class="mask">
+        className="mask">
         <Container>
           <Col className="text-white" md={{ span: 4, offset: 4 }}>
             <h2>
               {" "}
-              <b class="row justify-content-center"> Login Form </b>{" "}
+              <b className="row justify-content-center"> Login Form </b>{" "}
             </h2>
             <br></br>
             <br></br>
@@ -103,7 +103,7 @@ const Login = ({ isLoggedIn, setIsLoggedIn, setUsername, username }) => {
     }}
   >
     <div
-        class="mask"
+        className="mask"
         style={{
           backgroundColor: "rgba(0, 0, 0, 0.6)",
           height: "100vh",
