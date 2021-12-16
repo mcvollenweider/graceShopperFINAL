@@ -44,7 +44,8 @@ const Profile = () => {
         <Row className="m-5">
           {allProducts && allProducts.length
             ? allProducts.map((product, index) => {
-                //console.log(product);
+                console.log(product.current_owner, "current owner");
+                console.log(userName, "userName")
                 if (userName === product.current_owner) {
                   return (
                     <Card

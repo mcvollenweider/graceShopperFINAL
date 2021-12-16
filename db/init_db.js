@@ -134,9 +134,9 @@ async function createInitialProducts() {
         author: "kyle",
         name: "St. Michael",
         price: "10.00",
-        current_owner: "Auriel",
+        current_owner: "Dan",
         image_url:
-          "https://avatars2.githubusercontent.com/u/29058777?s=460&v=4",
+          "https://i.gadgets360cdn.com/large/Bored_ape_NFT_1631274836067.jpg?downsize=950:*",
         for_sale: true,
         description: "A example of st. michael",
         user_chain: [
@@ -150,11 +150,11 @@ async function createInitialProducts() {
       {
         id: 2,
         author: "friendlyArtist42",
-        name: "St. Jude",
+        name: "Pop Tart",
         price: "99.00",
-        current_owner: "Milk",
+        current_owner: "Dan",
         image_url:
-          "https://avatars2.githubusercontent.com/u/29058777?s=460&v=4",
+          "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/nft-1-1614978591.jpg?crop=0.5xw:1xh;center,top&resize=640:*",
         for_sale: true,
         buyout_price: "99.00", //set by owner/seller
         description: "A example of St. Jude",
@@ -169,11 +169,11 @@ async function createInitialProducts() {
       {
         id: 3,
         author: "daveC",
-        name: "St. Paul",
+        name: "Daniel Rivera's Cat",
         price: "100.00",
         current_owner: "Auriel",
         image_url:
-          "https://avatars2.githubusercontent.com/u/29058777?s=460&v=4",
+          "https://cdn.vox-cdn.com/thumbor/bouCIhEhMramGHZAiQGaa3q43vo=/1400x1400/filters:format(png)/cdn.vox-cdn.com/uploads/chorus_asset/file/22341171/Screen_Shot_2021_03_02_at_3.21.50_PM.png",
         for_sale: true,
         buyout_price: "100.00", //set by owner/seller
         description: "A example of St. Paul",
@@ -188,11 +188,30 @@ async function createInitialProducts() {
       {
         id: 4,
         author: "bestArtist",
-        name: "St. John",
+        name: "Lazer Monk",
         price: "84.23",
         current_owner: "Milk",
         image_url:
-          "https://avatars2.githubusercontent.com/u/29058777?s=460&v=4",
+          "https://www.artnews.com/wp-content/uploads/2021/08/BAYC-8746.png?w=631",
+        for_sale: true,
+        buyout_price: "84.23", //set by owner/seller
+        description: "A example of St. John",
+        user_chain: [
+          {
+            hash: "34",
+            previous_hash: "33",
+            price: "84.23",
+          },
+        ],
+      },
+      {
+        id: 5,
+        author: "bestArtist",
+        name: "100",
+        price: "84.23",
+        current_owner: "Dan",
+        image_url:
+          "https://media.istockphoto.com/photos/concept-cryptographic-nft-on-a-hundreddollar-bill-franklin-in-glasses-picture-id1313353553?b=1&k=20&m=1313353553&s=170667a&w=0&h=leO19ogTi5MnJ0D6jd_olZvda6q_CDSpB9oJgGtpkGQ=",
         for_sale: true,
         buyout_price: "84.23", //set by owner/seller
         description: "A example of St. John",

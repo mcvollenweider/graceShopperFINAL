@@ -2,8 +2,8 @@
 
 import React from "react";
 import dan from "./images/Daniel_Rivera.jpg";
-import aboutUs from "./images/Challenges-of-Fintech-EDM.png";
-import evan from "./images/Evan.jpg";
+import aboutUs from "./images/ShoppersDelightNFT.jpg";
+import evan from "./images/Evan.png";
 import christian from "./images/Christian.jpg";
 
 function About() {
@@ -13,34 +13,26 @@ function About() {
         <div class="container">
           <div class="row justify-content-start">
             <div className="text-white">
-              <img
-                src={aboutUs}
-                alt="about us"
-                style={{
-                  maxWidth: "40%",
-                  height: "auto",
-                  maxHeight: "100%",
-                }}
-              />
               <h1 className="row justify-content-center text-white">
                 {" "}
                 About us{" "}
               </h1>
-
+              <br></br>
+              <br></br>
+              <br></br>
+              <div className="row justify-content-center">
+              <img
+                src={aboutUs}
+                alt="about us"
+                style={{
+                  maxWidth: "75%",
+                  height: "auto",
+                  maxHeight: "50%",
+                }}
+              />
+              </div>
               <div>
                 {" "}
-                <p className="text-white">
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum has been the industry's
-                  standard dummy text ever since the 1500s, when an unknown
-                  printer took a galley of type and scrambled it to make a type
-                  specimen book. It has survived not only five centuries, but
-                  also the leap into electronic typesetting, remaining
-                  essentially unchanged. It was popularised in the 1960s with
-                  the release of Letraset sheets containing Lorem Ipsum
-                  passages, and more recently with desktop publishing software
-                  like Aldus PageMaker including versions of Lorem Ipsum.
-                </p>
                 <br></br>
                 <br></br>
                 <br></br>
@@ -66,8 +58,8 @@ function About() {
                 <p>
                   Christian Vollenweider is from Jacksonville Florida. He
                   recently decided to pursue a career change and joined the
-                  Fullstack Academy 2021 Cohort. Christian is graduating
-                  from Fullstack with a Web Development Certificate and hopes to
+                  Fullstack Academy 2021 Cohort. Christian is graduating from
+                  Fullstack with a Web Development Certificate and hopes to
                   enter the tech field as a Front-End Developer soon.
                 </p>
               </div>
@@ -144,4 +136,3 @@ function About() {
 }
 
 export default About;
-

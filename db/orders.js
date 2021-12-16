@@ -24,7 +24,7 @@ async function createOrder({ userID, completed }) {
   }
 }
 
-async function createOrderItem( quantity, productID, orderID ) {
+async function createOrderItem(quantity, productID, orderID) {
   try {
     const {
       rows: [orderItem],
