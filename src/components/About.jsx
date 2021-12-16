@@ -10,8 +10,8 @@ function About() {
   return (
     <div>
       <div className="bg-image">
-        <div class="container">
-          <div class="row justify-content-start">
+        <div className="container">
+          <div className="row justify-content-start">
             <div className="text-white">
               <h1 className="row justify-content-center text-white">
                 {" "}
@@ -42,8 +42,8 @@ function About() {
               </div>
             </div>
           </div>
-          <div class="row justify-content-evenly">
-            <div class="col-4 text-white">
+          <div className="row justify-content-evenly">
+            <div className="col-4 text-white">
               <div className="img-fluid ">
                 <h1></h1>
                 <img
@@ -66,8 +66,8 @@ function About() {
             </div>
           </div>
 
-          <div class="row justify-content-evenly">
-            <div class="col-4 text-white">
+          <div className="row justify-content-evenly">
+            <div className="col-4 text-white">
               <div className="img-fluid ">
                 <img
                   src={evan}
@@ -94,10 +94,10 @@ function About() {
                 </p>
               </div>
             </div>
-            <div class="col-4"></div>
+            <div className="col-4"></div>
           </div>
-          <div class="row justify-content-evenly">
-            <div class="col-4 text-white">
+          <div className="row justify-content-evenly">
+            <div className="col-4 text-white">
               <div className="img-fluid ">
                 <img
                   src={dan}
