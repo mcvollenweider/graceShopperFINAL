@@ -151,7 +151,7 @@ function Cart({
               offset={1}
               variant="dark"
               style={{ paddingLeft: "10px" }}
-              onClick={handlePaymentShow}
+            
             >
               Empty Cart
             </Button>
@@ -217,13 +217,7 @@ function Cart({
                 />
               </Form.Group>
 
-              <Form.Group className="mb-3" id="formGridCheckbox">
-                <Form.Check
-                  type="checkbox"
-                  required
-                  label="I agree to terms and conditions"
-                />
-              </Form.Group>
+              
             </Row>
             <Modal.Footer>
               <Button variant="secondary" onClick={handlePaymentClose}>

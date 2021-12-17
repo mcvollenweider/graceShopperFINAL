@@ -58,7 +58,7 @@ const Products = ({
   };
 
   return (
-    <div className="bg-image mt-3">
+    <div className="bg-image">
       <div className="mask">
         <Container className="d-flex justify-content-center">
           <Row>
