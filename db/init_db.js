@@ -55,29 +55,28 @@ async function createTables() {
         );`);
     console.log("Finished building products table!");
 
-    //create a table that stores pending orders
-    //Do we need ON DELETE CASCADE W/ FOREIGN KEY for when a user deletes account?
-    //change VARCHAR length to only what is neccesary and no more.
-    // console.log("Starting to build pending orders table...");
-    // await client.query(`
-    //     CREATE TABLE pendingOrders(
-    //       id SERIAL PRIMARY KEY,
-    //       product_id INTEGER REFERENCES products(id) ON DELETE CASCADE,
-    //       buyer_id INTEGER NOT NULL,
-    //       seller_id INTEGER NOT NULL,
-    //       price DECIMAL(10,2) NOT NULL,
-    //       status BOOLEAN NOT NULL,
-    //       expires VARCHAR(255) NOT NULL
-    //     );`);
-
+    // create a table that stores pending orders
+    // Do we need ON DELETE CASCADE W/ FOREIGN KEY for when a user deletes account?
+    // change VARCHAR length to only what is neccesary and no more.
+    console.log("Starting to build pending orders table...");
     await client.query(`
-        
+        CREATE TABLE pendingOrders( 
+          id SERIAL PRIMARY KEY,        
+          product_id INTEGER NOT NULL,
+          name VARCHAR(255) NOT NULL,
+          price VARCHAR(255) NOT NULL,
+          description VARCHAR(255) NOT NULL
+        );`);
+    console.log("Finished building pending orders table!");
+
+console.log("Starting to build orders table...");
+    await client.query(`        
         CREATE TABLE orders(
           id SERIAL PRIMARY KEY,
-          "userID" INTEGER REFERENCES users(id),
-          completed BOOLEAN DEFAUlT false
-          );
-        
+          "userID" VARCHAR(255) NOT NULL,
+          completed BOOLEAN DEFAULT false,
+          "orderInfo" VARCHAR(5000)
+          );        
         `);
 
     console.log("Finished building orders table!");
@@ -136,7 +135,7 @@ async function createInitialProducts() {
         price: "10.00",
         current_owner: "Dan",
         image_url:
-          "https://i.gadgets360cdn.com/large/Bored_ape_NFT_1631274836067.jpg?downsize=950:*",
+          "https://ibb.co/Q9D9qHz",
         for_sale: true,
         description: "A example of st. michael",
         user_chain: [
@@ -237,7 +236,8 @@ async function createInitialProducts() {
 async function createAndPopulateOrderCart() {
   console.log("Starting to create initial cart...");
   try {
-    const newOrder = await createOrder({ userID: 1, completed: false });
+
+    const newOrder = await createOrder({ userID: 1, completed: false, item: "lolproducthere"});
     console.log(newOrder, "did we create new order");
     if (newOrder) {
       const newOrderItem1 = await createOrderItem(7, 1, newOrder.id);
@@ -267,7 +267,7 @@ async function rebuildDB() {
     await createTables();
     await createInitialUsers();
     await createInitialProducts();
-    await createAndPopulateOrderCart();
+    // await createAndPopulateOrderCart();
   } catch (error) {
     console.log("Error during rebuildDB");
     throw error;

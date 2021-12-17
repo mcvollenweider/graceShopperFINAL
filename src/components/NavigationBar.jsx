@@ -8,20 +8,28 @@ import { Link } from "react-router-dom";
 import { useState } from "react";
 import Cart from "./Cart";
 
-function NavigationBar() {
-  const [show, setShow] = useState(false);
+function NavigationBar({
+  cart,
+  totalPrice,
+  setTotalPrice,
+  setCartShow,
+  cartShow,
+}) {
+  const [paymentShow, setPaymentShow] = useState(false);
+
   return (
     <div>
       <Navbar bg="dark" variant={"dark"} expand="lg">
         {/* <Link className="remove_" to="/Home"> */}
-          <Navbar.Brand
-          as={Link}to="/Home"
-            // href="Home"
-            className="btn-group "
-            style={{ paddingLeft: "2%" }}
-          >
-            Shoppers Delight
-          </Navbar.Brand>
+        <Navbar.Brand
+          as={Link}
+          to="/Home"
+          // href="Home"
+          className="btn-group "
+          style={{ paddingLeft: "2%" }}
+        >
+          Shoppers Delight
+        </Navbar.Brand>
         {/* </Link> */}
 
         <Navbar.Toggle aria-controls="navbarScroll" />
@@ -47,26 +55,45 @@ function NavigationBar() {
             style={{ paddingLeft: "2%" }}
             navbarScroll
           >
-              <NavDropdown title="Explore" id="navbarScrollingDropdown">
-                <NavDropdown.Item as={Link}to="/products">All NFTs</NavDropdown.Item>
-              </NavDropdown>
+            <NavDropdown title="Explore" id="navbarScrollingDropdown">
+              <NavDropdown.Item as={Link} to="/products">
+                All NFTs
+              </NavDropdown.Item>
+            </NavDropdown>
 
             <NavDropdown title="Resources" id="navbarScrollingDropdown">
-                <NavDropdown.Item as={Link}to="/ContactUs">Contact Us</NavDropdown.Item>
-                <NavDropdown.Item as={Link}to="/Newsletter">Newsletter</NavDropdown.Item>
+              <NavDropdown.Item as={Link} to="/ContactUs">
+                Contact Us
+              </NavDropdown.Item>
+              <NavDropdown.Item as={Link} to="/Newsletter">
+                Newsletter
+              </NavDropdown.Item>
               <NavDropdown.Divider />
-                <NavDropdown.Item as={Link}to="/Discord">Discord Community</NavDropdown.Item>
+              <NavDropdown.Item as={Link} to="/Discord">
+                Discord Community
+              </NavDropdown.Item>
             </NavDropdown>
 
             <NavDropdown title="Create" id="navbarScrollingDropdown">
-                <NavDropdown.Item as={Link}to="/Profile">Profile</NavDropdown.Item>
-                <NavDropdown.Item as={Link}to="/Login">Login</NavDropdown.Item>
-                <NavDropdown.Item as={Link}to="/Register">Register</NavDropdown.Item>
+              <NavDropdown.Item as={Link} to="/Profile">
+                Profile
+              </NavDropdown.Item>
+              <NavDropdown.Item as={Link} to="/Login">
+                Login
+              </NavDropdown.Item>
+              <NavDropdown.Item as={Link} to="/Register">
+                Register
+              </NavDropdown.Item>
             </NavDropdown>
             <Nav.Link>
               <Cart
-                show={show}
-                setShow={setShow}
+                cart={cart}
+                cartShow={cartShow}
+                paymentShow={paymentShow}
+                setCartShow={setCartShow}
+                setPaymentShow={setPaymentShow}
+                totalPrice={totalPrice}
+                setTotalPrice={setTotalPrice}
                 style={{ marginLeft: "5%" }}
               />
             </Nav.Link>

@@ -32,10 +32,14 @@ ordersRouter.get("/:orderID", async (req, res, next) => {
 
 ordersRouter.post("/", async (req, res, next) => {
   try {
-    const { userID, completed } = req.body;
+    let { userID, completed, item } = req.body;
+    if(!userID) {
+      userID = 'GUEST';
+    }
+    let details =  {userID, completed, item} 
+    console.log(details, 'lololol55555');
+    const newOrder = await createOrder(details);
 
-    const newOrder = await createOrder({ userID, completed });
-    console.log(newOrder, "newOrder created");
     if (newOrder) {
       res.send(newOrder);
     } else {
@@ -58,7 +62,7 @@ ordersRouter.post("/:orderID", async (req, res, next) => {
       productID,
       orderID,
     });
-    console.log(newOrderItem, "newOrderItem created");
+    
     if (newOrderItem) {
       res.send(newOrderItem);
     } else {

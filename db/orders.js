@@ -1,6 +1,6 @@
 const client = require("./client");
 
-async function createOrder({ userID, completed }) {
+async function createOrder({userID, completed, item}) {
   try {
     let isComplete;
     if (completed) {
@@ -12,11 +12,11 @@ async function createOrder({ userID, completed }) {
       rows: [order],
     } = await client.query(
       `
-        INSERT INTO orders("userID", completed)
-        VALUES($1, $2)
+        INSERT INTO orders("userID", completed, "orderInfo")
+        VALUES($1, $2, $3)
         RETURNING *;
       `,
-      [userID, isComplete]
+      [userID, isComplete, item]
     );
     return order;
   } catch (error) {

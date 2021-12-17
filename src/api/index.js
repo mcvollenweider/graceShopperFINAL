@@ -50,7 +50,7 @@ export async function getAllProducts() {
 }
 
 export async function getSingleProduct(id) {
-  console.log('get single prod api/index', id)
+
   try {
     const { data } = await axios.get(`${BASE}/products/${id}`);
     return data;
@@ -59,7 +59,15 @@ export async function getSingleProduct(id) {
   }
 }
 
-
+export async function completePurchase(cart) {
+  try {
+    const { data } = await axios.post(`${BASE}/orders`, cart);
+    console.log(data);
+    return data;
+  } catch (error) {
+    throw error;
+  }
+}
 
 
 

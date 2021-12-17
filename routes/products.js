@@ -1,6 +1,6 @@
 const express = require("express");
 const productsRouter = express.Router();
-const { createProduct, getSingleProduct, getAllProducts } = require("../db/products");
+const { createProduct, getSingleProduct, getAllProducts, pendingOrders } = require("../db/products");
 
 productsRouter.get("/:id", async (req, res, next) => {
   console.log('lol here in products.js items/:id route'); 
