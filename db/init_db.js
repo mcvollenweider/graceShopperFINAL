@@ -222,6 +222,63 @@ async function createInitialProducts() {
           },
         ],
       },
+      {
+        id: 6,
+        author: "bestArtist",
+        name: "chillinyall'",
+        price: "84.23",
+        current_owner: "Dan",
+        image_url:
+          "https://i.ibb.co/v1X1rdg/borealis-sea-by-nimiszu-des6zs7-fullview.jpg",
+        for_sale: true,
+        buyout_price: "84.23", //set by owner/seller
+        description: "A example of St. John",
+        user_chain: [
+          {
+            hash: "34",
+            previous_hash: "33",
+            price: "84.23",
+          },
+        ],
+      },
+      {
+        id: 7,
+        author: "ampleArtist",
+        name: "keepin it real",
+        price: "51.11",
+        current_owner: "Mike",
+        image_url:
+          "https://tinyurl.com/5be98yb4",
+        for_sale: true,
+        buyout_price: "84.23", //set by owner/seller
+        description: "Keepin it so real all the time lol",
+        user_chain: [
+          {
+            hash: "34",
+            previous_hash: "33",
+            price: "84.23",
+          },
+        ],
+      },
+      {
+        id: 8,
+        author: "tigermanlol",
+        name: "saving all the animals ",
+        price: "9555.00",
+        current_owner: "Trump",
+        image_url:
+          "https://tinyurl.com/2s3wktdf",
+        for_sale: true,
+        buyout_price: "84.23", //set by owner/seller
+        description: "Keepin it so real all the time lol",
+        user_chain: [
+          {
+            hash: "34",
+            previous_hash: "33",
+            price: "84.23",
+          },
+        ],
+      },
     ];
     const users = await Promise.all(productsToCreate.map(createProduct));
     console.log("Users created:");

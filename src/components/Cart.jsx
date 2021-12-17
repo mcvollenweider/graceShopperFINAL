@@ -95,9 +95,9 @@ function Cart({
                     className="m-2"
                   >
                     <Col md={12}>
-                      <h5>
+                      <h5 className="border-bottom">
                         <span style={{ fontSize: "1.2em" }}>
-                          {product.productName} x 1
+                          {product.productName}  <span style={{float: "right"}}>{product.productPrice}</span>
                         </span>
                       </h5>
                     </Col>
