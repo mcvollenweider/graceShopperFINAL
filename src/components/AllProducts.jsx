@@ -44,7 +44,7 @@ const AllProducts = (props) => {
                       key={product.id + index}
                       style={{ width: "18rem" }}
                     >
-                      <Card.Img className="mt-3" src={product.image_url} />
+                      <Card.Img className="mt-3 h-100" src={product.image_url} />
                       <Card.Body className="text-center">
                         <Card.Title>
                           <Link to={`/products/${product.id}`}>

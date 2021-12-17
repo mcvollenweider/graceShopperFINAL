@@ -135,7 +135,7 @@ async function createInitialProducts() {
         price: "10.00",
         current_owner: "Dan",
         image_url:
-          "https://ibb.co/Q9D9qHz",
+          "https://i.ibb.co/v1X1rdg/borealis-sea-by-nimiszu-des6zs7-fullview.jpg",
         for_sale: true,
         description: "A example of st. michael",
         user_chain: [

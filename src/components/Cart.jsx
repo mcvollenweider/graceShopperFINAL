@@ -21,6 +21,17 @@ function Cart({
     handleOffCanvClose();
     handlePaymentClose();
     completePurchase({ completed: "asdasdasd", id: 5, item: cart });
+    function paymentFormHelper(){
+      if(firstName == "" || lastName == "" || cardNumber == "" || expiryDate == ""){
+        if (confirm("Please fill out all fields")) {
+          handleOffCanvShow();
+          handlePaymentShow();
+        }
+      }else{
+        return true
+      }
+    }
+    paymentFormHelper();
   }
   useEffect(() => {
     setTotalPrice(
@@ -36,13 +47,7 @@ function Cart({
   const [lastName, setLastName] = useState("");
   const [cardNumber, setCardNumber] = useState("");
   const [expiryDate, setExpiryDate] = useState("");
-  function paymentFormHelper(){
-    if(firstName == "" || lastName == "" || cardNumber == "" || expiryDate == ""){
-      alert("Please fill out all fields");
-    }else{
-      return true
-    }
-  }
+
   return (
     <>
       <Row
@@ -196,8 +201,9 @@ function Cart({
                 <Form.Control
                   placeholder="ex - 4524 3425 2345 9999"
                   value={cardNumber}
-                  onChange={(e) => setCardNumber(e.target.value)}
-                  type="number"
+                  onChange={(e) => {setCardNumber(e.target.value)}}
+                  type="text"
+                  maxLength={16}
                 />
               </Form.Group>
               <Form.Group className="mb-3" controlId="formGridAddress1">
@@ -226,7 +232,7 @@ function Cart({
               <Button
                 variant="primary"
                 type="submit"
-                onClick={paymentFormHelper ? completePurchaseHelper : null}
+                onClick={completePurchaseHelper}
               >
                 Complete Transaction
               </Button>
