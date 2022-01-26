@@ -1,3 +1,12 @@
+Built a basic e-commerce web application. It has the following features:
+
+You can browse & purchase items with or without an account
+Items are categorized, and there is a way to see items by category
+If you have an account you can see your order history
+If you have an account your current shopping cart can be seen on multiple devices
+
+
+
 # The Smallest Starting Point
 
 So, you want to build a full-stack JavaScript application with:
